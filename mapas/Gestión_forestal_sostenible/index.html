@@ -1,5 +1,5 @@
 
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="utf-8">
   <title>Gestión forestal sostenible | Atlas de Conocimiento Crítico, versión ligera y estática</title>
@@ -16,7 +16,7 @@
 
   <link rel="stylesheet" href="css/leaflet.css">
   <link rel="stylesheet" href="css/style.css">
-
+  
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
     crossorigin="anonymous"></script>
@@ -46,6 +46,7 @@
   <script type="text/javascript" src="js/leaflet.ContinuousZoom.js"></script>
 
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
+
 
   <script type="text/javascript" src="js/atlas.js"></script>
 
@@ -95,23 +96,65 @@
 
     
     <div class="content-window">
-      <div class="container-fluid">
-      <div class="col-md-12">
-          <p><h1 id="mapa-gesti-n-forestal-sostenible">Mapa: Gestión forestal sostenible</h1>
-<p>Planes anuales de aprovechamiento</p>
-<h2 id="metadatos">Metadatos</h2>
-<ul>
-<li>Fecha de creación/inicio (aproximada): 12/04/2021</li>
-<li>Fecha de última actualización (aproximada): 1/06/2021</li>
-<li>Administración en la que se encuadra el mapa: Administración General</li>
-<li>Estado del mapa: Fase 4</li>
-</ul>
-<h2 id="etiquetas">Etiquetas</h2>
-<p>Organización, Fase 4, Administración General</p>
-</p>
-          <a href="https://ws168.juntadeandalucia.es/wikigestionC/index.php?title=Mapa_de_Conocimiento_Cr%C3%ADtico" target="_blank">M&aacute;s informaci&oacute;n sobre los Mapa de Conocimiento Cr&iacute;tico en nuestra p&aacute;gina del Wiki de Gesti&oacute;n del Conocimiento.</a>
-      </div>
-      </div>
+        <div class="container-fluid">
+            <div class="col-md-12">
+                <p></p>
+                <div>
+                    <h1>Mapa: Gestión forestal sostenible</h1>
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" id="descripcion-tab" data-toggle="tab" href="#descripcion" role="tab" aria-controls="descripcion" aria-selected="false">Descripción</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="descripcion" role="tabpanel" aria-labelledby="descripcion-tab">
+                            <div class="card">
+                            <div class="card-body">
+                            <p class="card-text lead">Planes anuales de aprovechamiento</p>
+                            <p class="card-text text-muted">Este mapa no tiene fichas públicas <em>todavía</em>.</p>
+                            <hr>
+                            <h4 class="card-title">Metadatos</h4>
+                            <table class="table table-striped table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" align="center">
+                                            Creación
+                                        </th>
+                                        <th scope="col" align="center">
+                                            Actualización
+                                        </th>
+                                        <th>
+                                            Administración
+                                        </th>
+                                        <th scope="col" align="center">
+                                            Estado/fase de desarrollo
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td align="center">
+                                            12/04/2021
+                                        </td>
+                                        <td align="center">
+                                            1/06/2021
+                                        </td>
+                                        <td>
+                                            Administración General
+                                        </td>
+                                        <td align="center">
+                                            Fase 4
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     
