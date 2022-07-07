@@ -1,25 +1,27 @@
 
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="utf-8">
   <title>Mapas | Atlas de Conocimiento Crítico, versión ligera y estática</title>
-  <base href="/">
+  <base href="https://conocimientocritico.github.io/">
   <meta name="description" content="Atlas de Mapas de Conocimiento Crítico, versión ligera y estática, del programa de Embajadores del Conocimiento (IAAP - Junta de Andalucía)">
   <meta name="keywords" content="static site, conocimiento crítico, gestión del conocimiento, knowledge management, embajadores del conocimiento, ">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="/favicon-atlas.ico">
+  <meta http-equiv="Content-Type" content="text/html">
+  <link rel="icon" type="image/x-icon" href="favicon-atlas.ico">
   
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
     crossorigin="anonymous">
   
 
-  <link rel="stylesheet" href="css/leaflet.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/MarkerCluster.Default.css">
-  <link rel="stylesheet" href="css/MarkerCluster.css">
-  <link rel="stylesheet" href="css/leaflet-search.min.css">
-  <link rel="stylesheet" href="css/leaflet-search.mobile.min.css">
+  <link rel="stylesheet" type="text/css" href="css/leaflet.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/MarkerCluster.Default.css">
+  <link rel="stylesheet" type="text/css" href="css/MarkerCluster.css">
+  <link rel="stylesheet" type="text/css" href="css/leaflet-search.min.css">
+  <link rel="stylesheet" type="text/css" href="css/leaflet-search.mobile.min.css">
   
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
@@ -59,20 +61,20 @@
 </head>
 
 <body>
-    <a href="/sitemap.html"></a>
+    <a href="sitemap.html" alt="Mapa del sitio" aria-label="Mapa del sitio"></a>
 
     
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand text-light" href="/atlas.html">Atlas de Conocimiento Crítico</a>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" aria-label="Barra de navegación">
+      <a class="navbar-brand text-light font-weight-bold" href="index.html" aria-label="Página principal">Atlas de Conocimiento Crítico</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
       </button>
-      <div div class="collapse navbar-collapse" id="collapsingNavbar">
+      <div div class="collapse navbar-collapse" id="collapsingNavbar" aria-label="Menú">
         <div class="navbar-nav">
-          <a class="nav-item nav-link" href="mapas">Mapas</a>
-          <a class="nav-item nav-link" href="mapas/animacion">Animación</a>
-          <a class="nav-item nav-link" href="acerca-de">Acerca de...</a>
-          <div id="findbox"></div>
+          <a class="nav-item nav-link text-light" href="mapas/" aria-label="Mapas">Mapas</a>
+          <a class="nav-item nav-link text-light" href="mapas/animacion/" aria-label="Animación">Animación</a>
+          <a class="nav-item nav-link text-light" href="acerca-de/" aria-label="Acerca de...">Acerca de...</a>
+          <div id="findbox" aria-label="Buscar"></div>
         </div>
       </div>
   </nav>
@@ -139,22 +141,9 @@
                 icon: icon_oil_drop
               }
             ).bindPopup (
-              '<h6><a href="/mapas/Actividades,_funciones_y_competencias">Actividades, funciones y competencias</a>'+
+              '<h6><a href="mapas/Actividades__funciones_y_competencias/">Actividades, funciones y competencias</a>'+
               '<br/>'+
               '<span class="small">Etiquetas: <i>Área, Fase 4, Administración General</i></span></h6>'
-              );
-          markers.addLayer(marker);
-
-          marker = L.marker(
-              [36.8360391, -2.4634845],
-              {
-                title: 'Actividad: Elevar Informe a la S. G.',
-                icon: icon_oil_drop
-              }
-            ).bindPopup (
-              '<h6><a href="/mapas/Actividad__Elevar_Informe_a_la_S__G_">Actividad: Elevar Informe a la S. G.</a>'+
-              '<br/>'+
-              '<span class="small">Etiquetas: <i>Proceso, Fase 4, Administración General</i></span></h6>'
               );
           markers.addLayer(marker);
 
@@ -165,412 +154,9 @@
                 icon: icon_oil_drop
               }
             ).bindPopup (
-              '<h6><a href="/mapas/Actualización_de_procedimientos_preventivos_">Actualización de procedimientos preventivos</a>'+
+              '<h6><a href="mapas/Actualizacion_de_procedimientos_preventivos_/">Actualización de procedimientos preventivos</a>'+
               '<br/>'+
               '<span class="small">Etiquetas: <i>Área, Fase 4, Sanidad</i></span></h6>'
-              );
-          markers.addLayer(marker);
-
-          marker = L.marker(
-              [37.8866752, -4.7826835],
-              {
-                title: 'Calificación Instalaciones Turísticas',
-                icon: icon_oil_drop
-              }
-            ).bindPopup (
-              '<h6><a href="/mapas/Calificación_Instalaciones_Turísticas">Calificación Instalaciones Turísticas</a>'+
-              '<br/>'+
-              '<span class="small">Etiquetas: <i>Proceso, Fase 0 (del Manual 1.0), Administración General</i></span></h6>'
-              );
-          markers.addLayer(marker);
-
-          marker = L.marker(
-              [37.8842828, -4.7819495],
-              {
-                title: 'Configuración de la firma digital de usuarios/as',
-                icon: icon_oil_drop
-              }
-            ).bindPopup (
-              '<h6><a href="/mapas/Configuración_de_la_firma_digital_de_usuarios_as">Configuración de la firma digital de usuarios/as</a>'+
-              '<br/>'+
-              '<span class="small">Etiquetas: <i>Proceso, Fase 1 (del Manual 1.0), Administración General</i></span></h6>'
-              );
-          markers.addLayer(marker);
-
-          marker = L.marker(
-              [37.8842828, -4.7819495],
-              {
-                title: 'Configuración de perfil móvil de usuario/a',
-                icon: icon_oil_drop
-              }
-            ).bindPopup (
-              '<h6><a href="/mapas/Configuración_de_perfil_móvil_de_usuario_a">Configuración de perfil móvil de usuario/a</a>'+
-              '<br/>'+
-              '<span class="small">Etiquetas: <i>Proceso, Fase 1 (del Manual 1.0), Administración General</i></span></h6>'
-              );
-          markers.addLayer(marker);
-
-          marker = L.marker(
-              [37.8842828, -4.7819495],
-              {
-                title: 'Configuración inicial de puesto de trabajo de usuario/a',
-                icon: icon_oil_drop
-              }
-            ).bindPopup (
-              '<h6><a href="/mapas/Configuración_inicial_de_puesto_de_trabajo_de_usuario_a">Configuración inicial de puesto de trabajo de usuario/a</a>'+
-              '<br/>'+
-              '<span class="small">Etiquetas: <i>Proceso, Fase 1 (del Manual 1.0), Administración General</i></span></h6>'
-              );
-          markers.addLayer(marker);
-
-          marker = L.marker(
-              [37.8847776, -4.775127],
-              {
-                title: 'Crear un Repositorio Documental Normativo',
-                icon: icon_oil_drop
-              }
-            ).bindPopup (
-              '<h6><a href="/mapas/Crear_un_Repositorio_Documental_Normativo">Crear un Repositorio Documental Normativo</a>'+
-              '<br/>'+
-              '<span class="small">Etiquetas: <i>Organización, Fase 4, Administración General</i></span></h6>'
-              );
-          markers.addLayer(marker);
-
-          marker = L.marker(
-              [36.8360391, -2.4634845],
-              {
-                title: 'Elevar Informe a la S. G. Industria y Minas',
-                icon: icon_oil_drop
-              }
-            ).bindPopup (
-              '<h6><a href="/mapas/Elevar_Informe_a_la_S__G__Industria_y_Minas">Elevar Informe a la S. G. Industria y Minas</a>'+
-              '<br/>'+
-              '<span class="small">Etiquetas: <i>Proceso, Fase 4, Administración General</i></span></h6>'
-              );
-          markers.addLayer(marker);
-
-          marker = L.marker(
-              [37.3802139, -5.9931103],
-              {
-                title: 'Evaluación de cursos de formación',
-                icon: icon_oil_drop
-              }
-            ).bindPopup (
-              '<h6><a href="/mapas/Evaluación_de_cursos_de_formación">Evaluación de cursos de formación</a>'+
-              '<br/>'+
-              '<span class="small">Etiquetas: <i>Área, Fase 4, Administración General</i></span></h6>'
-              );
-          markers.addLayer(marker);
-
-          marker = L.marker(
-              [37.8866752, -4.7826835],
-              {
-                title: 'Gestión de propuestas de proyectos hoteleros y apartamentos turísticos',
-                icon: icon_oil_drop
-              }
-            ).bindPopup (
-              '<h6><a href="/mapas/Gestión_de_propuestas_de_proyectos_hoteleros_y_apartamentos_turísticos">Gestión de propuestas de proyectos hoteleros y apartamentos turísticos</a>'+
-              '<br/>'+
-              '<span class="small">Etiquetas: <i>Proceso, Fase 0 (del Manual 1.0), Administración General</i></span></h6>'
-              );
-          markers.addLayer(marker);
-
-          marker = L.marker(
-              [37.3869618, -5.9875628],
-              {
-                title: 'Gestión forestal sostenible',
-                icon: icon_oil_drop
-              }
-            ).bindPopup (
-              '<h6><a href="/mapas/Gestión_forestal_sostenible">Gestión forestal sostenible</a>'+
-              '<br/>'+
-              '<span class="small">Etiquetas: <i>Organización, Fase 4, Administración General</i></span></h6>'
-              );
-          markers.addLayer(marker);
-
-          marker = L.marker(
-              [37.8777414, -4.7881483],
-              {
-                title: 'Gestión Patrimonio Inmobiliario Órganos Judiciales',
-                icon: icon_oil_drop
-              }
-            ).bindPopup (
-              '<h6><a href="/mapas/Gestión_Patrimonio_Inmobiliario_Órganos_Judiciales">Gestión Patrimonio Inmobiliario Órganos Judiciales</a>'+
-              '<br/>'+
-              '<span class="small">Etiquetas: <i>Área, Fase 4 (del 1º Curso de Conocimiento Crítico), Administración General</i></span></h6>'
-              );
-          markers.addLayer(marker);
-
-          marker = L.marker(
-              [37.8866752, -4.7826835],
-              {
-                title: 'Implantar un sistema de teletrabajo en el servicio de Turismo',
-                icon: icon_oil_drop
-              }
-            ).bindPopup (
-              '<h6><a href="/mapas/Implantar_un_sistema_de_teletrabajo_en_el_servicio_de_Turismo">Implantar un sistema de teletrabajo en el servicio de Turismo</a>'+
-              '<br/>'+
-              '<span class="small">Etiquetas: <i>Proceso, Fase 1 (del Manual 1.0), Administración General</i></span></h6>'
-              );
-          markers.addLayer(marker);
-
-          marker = L.marker(
-              [37.8842828, -4.7819495],
-              {
-                title: 'Instalación de una nueva cola de impresión',
-                icon: icon_oil_drop
-              }
-            ).bindPopup (
-              '<h6><a href="/mapas/Instalación_de_una_nueva_cola_de_impresión">Instalación de una nueva cola de impresión</a>'+
-              '<br/>'+
-              '<span class="small">Etiquetas: <i>Proceso, Fase 2 (del Manual 1.0), Administración General</i></span></h6>'
-              );
-          markers.addLayer(marker);
-
-          marker = L.marker(
-              [37.3693308, -5.9585041],
-              {
-                title: 'Justificación de subvenciones',
-                icon: icon_oil_drop
-              }
-            ).bindPopup (
-              '<h6><a href="/mapas/Justificación_de_subvenciones">Justificación de subvenciones</a>'+
-              '<br/>'+
-              '<span class="small">Etiquetas: <i>Proceso, Fase 4, Administración General</i></span></h6>'
-              );
-          markers.addLayer(marker);
-
-          marker = L.marker(
-              [36.842119, -2.465550],
-              {
-                title: 'Liquidación de la ayuda a domicilio',
-                icon: icon_oil_drop
-              }
-            ).bindPopup (
-              '<h6><a href="/mapas/Liquidación_de_la_ayuda_a_domicilio">Liquidación de la ayuda a domicilio</a>'+
-              '<br/>'+
-              '<span class="small">Etiquetas: <i>Proceso, Fase 4, Administración General</i></span></h6>'
-              );
-          markers.addLayer(marker);
-
-          marker = L.marker(
-              [37.8842828, -4.7819495],
-              {
-                title: 'Mantenimiento del inventario del equipamiento informático y telefónico',
-                icon: icon_oil_drop
-              }
-            ).bindPopup (
-              '<h6><a href="/mapas/Mantenimiento_del_inventario_del_equipamiento_informático_y_telefónico">Mantenimiento del inventario del equipamiento informático y telefónico</a>'+
-              '<br/>'+
-              '<span class="small">Etiquetas: <i>Proceso, Fase 1 (del Manual 1.0), Administración General</i></span></h6>'
-              );
-          markers.addLayer(marker);
-
-          marker = L.marker(
-              [37.8842828, -4.7819495],
-              {
-                title: 'Mantenimiento de usuarios de la aplicación ECO',
-                icon: icon_oil_drop
-              }
-            ).bindPopup (
-              '<h6><a href="/mapas/Mantenimiento_de_usuarios_de_la_aplicación_ECO">Mantenimiento de usuarios de la aplicación ECO</a>'+
-              '<br/>'+
-              '<span class="small">Etiquetas: <i>Proceso, Fase 1 (del Manual 1.0), Administración General</i></span></h6>'
-              );
-          markers.addLayer(marker);
-
-          marker = L.marker(
-              [37.8842828, -4.7819495],
-              {
-                title: 'Maquetación de revista',
-                icon: icon_oil_drop
-              }
-            ).bindPopup (
-              '<h6><a href="/mapas/Maquetación_de_revista">Maquetación de revista</a>'+
-              '<br/>'+
-              '<span class="small">Etiquetas: <i>Proceso, Fase 4, Administración General</i></span></h6>'
-              );
-          markers.addLayer(marker);
-
-          marker = L.marker(
-              [37.4822431, -5.9436615],
-              {
-                title: 'Mecanismos de búsquedas y gestión de candidatos',
-                icon: icon_oil_drop
-              }
-            ).bindPopup (
-              '<h6><a href="/mapas/Mecanismos_de_búsquedas_y_gestión_de_candidatos">Mecanismos de búsquedas y gestión de candidatos</a>'+
-              '<br/>'+
-              '<span class="small">Etiquetas: <i>Proceso, Fase 0 (del Manual 1.0), Empleo</i></span></h6>'
-              );
-          markers.addLayer(marker);
-
-          marker = L.marker(
-              [37.3802139, -5.9931103],
-              {
-                title: 'Planificación y puesta en marcha de los talleres de formación de dirección',
-                icon: icon_oil_drop
-              }
-            ).bindPopup (
-              '<h6><a href="/mapas/Planificación_y_puesta_en_marcha_de_los_talleres_de_formación_de_dirección">Planificación y puesta en marcha de los talleres de formación de dirección</a>'+
-              '<br/>'+
-              '<span class="small">Etiquetas: <i>Proceso, Fase 4, Administración General</i></span></h6>'
-              );
-          markers.addLayer(marker);
-
-          marker = L.marker(
-              [37.3752813, -5.9638453],
-              {
-                title: 'Plan de Actuación de Zona. Planes de Centro de los Centros afectados.',
-                icon: icon_oil_drop
-              }
-            ).bindPopup (
-              '<h6><a href="/mapas/Plan_de_Actuación_de_Zona__Planes_de_Centro_de_los_Centros_afectados_">Plan de Actuación de Zona. Planes de Centro de los Centros afectados.</a>'+
-              '<br/>'+
-              '<span class="small">Etiquetas: <i>Organización, Fase 4, Administración General</i></span></h6>'
-              );
-          markers.addLayer(marker);
-
-          marker = L.marker(
-              [37.8842828, -4.7819495],
-              {
-                title: 'Plataformado y configuración inicial de un ordenador',
-                icon: icon_oil_drop
-              }
-            ).bindPopup (
-              '<h6><a href="/mapas/Plataformado_y_configuración_inicial_de_un_ordenador">Plataformado y configuración inicial de un ordenador</a>'+
-              '<br/>'+
-              '<span class="small">Etiquetas: <i>Proceso, Fase 1 (del Manual 1.0), Administración General</i></span></h6>'
-              );
-          markers.addLayer(marker);
-
-          marker = L.marker(
-              [37.8842828, -4.7819495],
-              {
-                title: 'Preparación de una videoconferencia mediante red corporativa',
-                icon: icon_oil_drop
-              }
-            ).bindPopup (
-              '<h6><a href="/mapas/Preparación_de_una_videoconferencia_mediante_red_corporativa">Preparación de una videoconferencia mediante red corporativa</a>'+
-              '<br/>'+
-              '<span class="small">Etiquetas: <i>Proceso, Fase 2 (del Manual 1.0), Administración General</i></span></h6>'
-              );
-          markers.addLayer(marker);
-
-          marker = L.marker(
-              [37.3869618, -5.9875628],
-              {
-                title: 'Procedimientos operativos',
-                icon: icon_oil_drop
-              }
-            ).bindPopup (
-              '<h6><a href="/mapas/Procedimientos_operativos">Procedimientos operativos</a>'+
-              '<br/>'+
-              '<span class="small">Etiquetas: <i>Proceso, Fase 4, Administración General</i></span></h6>'
-              );
-          markers.addLayer(marker);
-
-          marker = L.marker(
-              [37.18288, -3.6020075],
-              {
-                title: 'Procesos de Facturación de contratación menor',
-                icon: icon_oil_drop
-              }
-            ).bindPopup (
-              '<h6><a href="/mapas/Procesos_de_Facturación_de_contratación_menor_">Procesos de Facturación de contratación menor</a>'+
-              '<br/>'+
-              '<span class="small">Etiquetas: <i>Proceso, Fase 4, Administración General</i></span></h6>'
-              );
-          markers.addLayer(marker);
-
-          marker = L.marker(
-              [37.8842828, -4.7819495],
-              {
-                title: 'Publicación de noticias y avisos en la Intranet',
-                icon: icon_oil_drop
-              }
-            ).bindPopup (
-              '<h6><a href="/mapas/Publicación_de_noticias_y_avisos_en_la_Intranet">Publicación de noticias y avisos en la Intranet</a>'+
-              '<br/>'+
-              '<span class="small">Etiquetas: <i>Proceso, Fase 1 (del Manual 1.0), Administración General</i></span></h6>'
-              );
-          markers.addLayer(marker);
-
-          marker = L.marker(
-              [37.2599688, -6.9573174],
-              {
-                title: 'Recepción por parte del contribuyente de las  notificaciones y requerimientos',
-                icon: icon_oil_drop
-              }
-            ).bindPopup (
-              '<h6><a href="/mapas/Recepción_por_parte_del_contribuyente_de_las__notificaciones_y_requerimientos">Recepción por parte del contribuyente de las  notificaciones y requerimientos</a>'+
-              '<br/>'+
-              '<span class="small">Etiquetas: <i>Proceso, Fase 4, Administración General</i></span></h6>'
-              );
-          markers.addLayer(marker);
-
-          marker = L.marker(
-              [37.3802139, -5.9931103],
-              {
-                title: 'Reclamaciones y sanciones',
-                icon: icon_oil_drop
-              }
-            ).bindPopup (
-              '<h6><a href="/mapas/Reclamaciones_y_sanciones">Reclamaciones y sanciones</a>'+
-              '<br/>'+
-              '<span class="small">Etiquetas: <i>Proceso, Fase 4, Administración General</i></span></h6>'
-              );
-          markers.addLayer(marker);
-
-          marker = L.marker(
-              [37.8842828, -4.7819495],
-              {
-                title: 'Recuperación de archivos borrados de una unidad de red',
-                icon: icon_oil_drop
-              }
-            ).bindPopup (
-              '<h6><a href="/mapas/Recuperación_de_archivos_borrados_de_una_unidad_de_red">Recuperación de archivos borrados de una unidad de red</a>'+
-              '<br/>'+
-              '<span class="small">Etiquetas: <i>Proceso, Fase 4 (del Manual 1.0), Administración General</i></span></h6>'
-              );
-          markers.addLayer(marker);
-
-          marker = L.marker(
-              [37.4822431, -5.9436615],
-              {
-                title: 'Registro de ofertas',
-                icon: icon_oil_drop
-              }
-            ).bindPopup (
-              '<h6><a href="/mapas/Registro_de_ofertas">Registro de ofertas</a>'+
-              '<br/>'+
-              '<span class="small">Etiquetas: <i>Proceso, Fase 0 (del Manual 1.0), Empleo</i></span></h6>'
-              );
-          markers.addLayer(marker);
-
-          marker = L.marker(
-              [37.8773685, -4.7876985],
-              {
-                title: 'Resolución de subvenciones en edificios',
-                icon: icon_oil_drop
-              }
-            ).bindPopup (
-              '<h6><a href="/mapas/Resolución_de_subvenciones_en_edificios">Resolución de subvenciones en edificios</a>'+
-              '<br/>'+
-              '<span class="small">Etiquetas: <i>Proceso, Fase 4, Administración General</i></span></h6>'
-              );
-          markers.addLayer(marker);
-
-          marker = L.marker(
-              [36.8238722, -2.4433644],
-              {
-                title: 'Técnico de Prevención de Riesgos Laborales',
-                icon: icon_oil_drop
-              }
-            ).bindPopup (
-              '<h6><a href="/mapas/Técnico_de_Prevención_de_Riesgos_Laborales">Técnico de Prevención de Riesgos Laborales</a>'+
-              '<br/>'+
-              '<span class="small">Etiquetas: <i>Puesto, Fase 4 (del 1º Curso de Conocimiento Crítico), Administración General</i></span></h6>'
               );
           markers.addLayer(marker);
 
@@ -581,7 +167,7 @@
                 icon: icon_oil_drop
               }
             ).bindPopup (
-              '<h6><a href="/mapas/Área_Asistencial_Anatomía_Patológica">Área Asistencial Anatomía Patológica</a>'+
+              '<h6><a href="mapas/Area_Asistencial_Anatomia_Patologica/">Área Asistencial Anatomía Patológica</a>'+
               '<br/>'+
               '<span class="small">Etiquetas: <i>Área, Fase 4, Sanidad</i></span></h6>'
               );
@@ -594,7 +180,7 @@
                 icon: icon_oil_drop
               }
             ).bindPopup (
-              '<h6><a href="/mapas/Área_de_Demandas">Área de Demandas</a>'+
+              '<h6><a href="mapas/Area_de_Demandas/">Área de Demandas</a>'+
               '<br/>'+
               '<span class="small">Etiquetas: <i>Área, Fase 4 (del 1º Curso de Conocimiento Crítico), Empleo</i></span></h6>'
               );
@@ -607,7 +193,7 @@
                 icon: icon_oil_drop
               }
             ).bindPopup (
-              '<h6><a href="/mapas/Área_de_Intermediación">Área de Intermediación</a>'+
+              '<h6><a href="mapas/Area_de_Intermediacion/">Área de Intermediación</a>'+
               '<br/>'+
               '<span class="small">Etiquetas: <i>Área, Fase 4 (del 1º Curso de Conocimiento Crítico), Empleo</i></span></h6>'
               );
@@ -620,7 +206,7 @@
                 icon: icon_oil_drop
               }
             ).bindPopup (
-              '<h6><a href="/mapas/Área_de_Ofertas">Área de Ofertas</a>'+
+              '<h6><a href="mapas/Area_de_Ofertas/">Área de Ofertas</a>'+
               '<br/>'+
               '<span class="small">Etiquetas: <i>Área, Fase 4 (del Manual 1.0), Empleo</i></span></h6>'
               );
@@ -633,9 +219,412 @@
                 icon: icon_oil_drop
               }
             ).bindPopup (
-              '<h6><a href="/mapas/Área_de_Orientación">Área de Orientación</a>'+
+              '<h6><a href="mapas/Area_de_Orientacion/">Área de Orientación</a>'+
               '<br/>'+
               '<span class="small">Etiquetas: <i>Área, Fase 1 (del 1º Curso de Conocimiento Crítico), Empleo</i></span></h6>'
+              );
+          markers.addLayer(marker);
+
+          marker = L.marker(
+              [37.8866752, -4.7826835],
+              {
+                title: 'Calificación Instalaciones Turísticas',
+                icon: icon_oil_drop
+              }
+            ).bindPopup (
+              '<h6><a href="mapas/Calificacion_Instalaciones_Turisticas/">Calificación Instalaciones Turísticas</a>'+
+              '<br/>'+
+              '<span class="small">Etiquetas: <i>Proceso, Fase 0 (del Manual 1.0), Administración General</i></span></h6>'
+              );
+          markers.addLayer(marker);
+
+          marker = L.marker(
+              [37.8842828, -4.7819495],
+              {
+                title: 'Configuración de la firma digital de usuarios/as',
+                icon: icon_oil_drop
+              }
+            ).bindPopup (
+              '<h6><a href="mapas/Configuracion_de_la_firma_digital_de_usuarios_as/">Configuración de la firma digital de usuarios/as</a>'+
+              '<br/>'+
+              '<span class="small">Etiquetas: <i>Proceso, Fase 1 (del Manual 1.0), Administración General</i></span></h6>'
+              );
+          markers.addLayer(marker);
+
+          marker = L.marker(
+              [37.8842828, -4.7819495],
+              {
+                title: 'Configuración de perfil móvil de usuario/a',
+                icon: icon_oil_drop
+              }
+            ).bindPopup (
+              '<h6><a href="mapas/Configuracion_de_perfil_movil_de_usuario_a/">Configuración de perfil móvil de usuario/a</a>'+
+              '<br/>'+
+              '<span class="small">Etiquetas: <i>Proceso, Fase 1 (del Manual 1.0), Administración General</i></span></h6>'
+              );
+          markers.addLayer(marker);
+
+          marker = L.marker(
+              [37.8842828, -4.7819495],
+              {
+                title: 'Configuración inicial de puesto de trabajo de usuario/a',
+                icon: icon_oil_drop
+              }
+            ).bindPopup (
+              '<h6><a href="mapas/Configuracion_inicial_de_puesto_de_trabajo_de_usuario_a/">Configuración inicial de puesto de trabajo de usuario/a</a>'+
+              '<br/>'+
+              '<span class="small">Etiquetas: <i>Proceso, Fase 1 (del Manual 1.0), Administración General</i></span></h6>'
+              );
+          markers.addLayer(marker);
+
+          marker = L.marker(
+              [37.8847776, -4.775127],
+              {
+                title: 'Crear un Repositorio Documental Normativo',
+                icon: icon_oil_drop
+              }
+            ).bindPopup (
+              '<h6><a href="mapas/Crear_un_Repositorio_Documental_Normativo/">Crear un Repositorio Documental Normativo</a>'+
+              '<br/>'+
+              '<span class="small">Etiquetas: <i>Organización, Fase 4, Administración General</i></span></h6>'
+              );
+          markers.addLayer(marker);
+
+          marker = L.marker(
+              [36.8360391, -2.4634845],
+              {
+                title: 'Elevar Informe a la S. G. Industria y Minas',
+                icon: icon_oil_drop
+              }
+            ).bindPopup (
+              '<h6><a href="mapas/Elevar_Informe_a_la_S__G__Industria_y_Minas/">Elevar Informe a la S. G. Industria y Minas</a>'+
+              '<br/>'+
+              '<span class="small">Etiquetas: <i>Proceso, Fase 4, Administración General</i></span></h6>'
+              );
+          markers.addLayer(marker);
+
+          marker = L.marker(
+              [37.3802139, -5.9931103],
+              {
+                title: 'Evaluación de cursos de formación',
+                icon: icon_oil_drop
+              }
+            ).bindPopup (
+              '<h6><a href="mapas/Evaluacion_de_cursos_de_formacion/">Evaluación de cursos de formación</a>'+
+              '<br/>'+
+              '<span class="small">Etiquetas: <i>Área, Fase 4, Administración General</i></span></h6>'
+              );
+          markers.addLayer(marker);
+
+          marker = L.marker(
+              [37.8866752, -4.7826835],
+              {
+                title: 'Gestión de propuestas de proyectos hoteleros y apartamentos turísticos',
+                icon: icon_oil_drop
+              }
+            ).bindPopup (
+              '<h6><a href="mapas/Gestion_de_propuestas_de_proyectos_hoteleros_y_apartamentos_turisticos/">Gestión de propuestas de proyectos hoteleros y apartamentos turísticos</a>'+
+              '<br/>'+
+              '<span class="small">Etiquetas: <i>Proceso, Fase 0 (del Manual 1.0), Administración General</i></span></h6>'
+              );
+          markers.addLayer(marker);
+
+          marker = L.marker(
+              [37.3869618, -5.9875628],
+              {
+                title: 'Gestión forestal sostenible',
+                icon: icon_oil_drop
+              }
+            ).bindPopup (
+              '<h6><a href="mapas/Gestion_forestal_sostenible/">Gestión forestal sostenible</a>'+
+              '<br/>'+
+              '<span class="small">Etiquetas: <i>Organización, Fase 4, Administración General</i></span></h6>'
+              );
+          markers.addLayer(marker);
+
+          marker = L.marker(
+              [37.8777414, -4.7881483],
+              {
+                title: 'Gestión Patrimonio Inmobiliario Órganos Judiciales',
+                icon: icon_oil_drop
+              }
+            ).bindPopup (
+              '<h6><a href="mapas/Gestion_Patrimonio_Inmobiliario_Organos_Judiciales/">Gestión Patrimonio Inmobiliario Órganos Judiciales</a>'+
+              '<br/>'+
+              '<span class="small">Etiquetas: <i>Área, Fase 4 (del 1º Curso de Conocimiento Crítico), Administración General</i></span></h6>'
+              );
+          markers.addLayer(marker);
+
+          marker = L.marker(
+              [37.8866752, -4.7826835],
+              {
+                title: 'Implantar un sistema de teletrabajo en el servicio de Turismo',
+                icon: icon_oil_drop
+              }
+            ).bindPopup (
+              '<h6><a href="mapas/Implantar_un_sistema_de_teletrabajo_en_el_servicio_de_Turismo/">Implantar un sistema de teletrabajo en el servicio de Turismo</a>'+
+              '<br/>'+
+              '<span class="small">Etiquetas: <i>Proceso, Fase 1 (del Manual 1.0), Administración General</i></span></h6>'
+              );
+          markers.addLayer(marker);
+
+          marker = L.marker(
+              [37.8842828, -4.7819495],
+              {
+                title: 'Instalación de una nueva cola de impresión',
+                icon: icon_oil_drop
+              }
+            ).bindPopup (
+              '<h6><a href="mapas/Instalacion_de_una_nueva_cola_de_impresion/">Instalación de una nueva cola de impresión</a>'+
+              '<br/>'+
+              '<span class="small">Etiquetas: <i>Proceso, Fase 2 (del Manual 1.0), Administración General</i></span></h6>'
+              );
+          markers.addLayer(marker);
+
+          marker = L.marker(
+              [37.3693308, -5.9585041],
+              {
+                title: 'Justificación de subvenciones',
+                icon: icon_oil_drop
+              }
+            ).bindPopup (
+              '<h6><a href="mapas/Justificacion_de_subvenciones/">Justificación de subvenciones</a>'+
+              '<br/>'+
+              '<span class="small">Etiquetas: <i>Proceso, Fase 4, Administración General</i></span></h6>'
+              );
+          markers.addLayer(marker);
+
+          marker = L.marker(
+              [36.842119, -2.465550],
+              {
+                title: 'Liquidación de la ayuda a domicilio',
+                icon: icon_oil_drop
+              }
+            ).bindPopup (
+              '<h6><a href="mapas/Liquidacion_de_la_ayuda_a_domicilio/">Liquidación de la ayuda a domicilio</a>'+
+              '<br/>'+
+              '<span class="small">Etiquetas: <i>Proceso, Fase 4, Administración General</i></span></h6>'
+              );
+          markers.addLayer(marker);
+
+          marker = L.marker(
+              [37.8842828, -4.7819495],
+              {
+                title: 'Mantenimiento del inventario del equipamiento informático y telefónico',
+                icon: icon_oil_drop
+              }
+            ).bindPopup (
+              '<h6><a href="mapas/Mantenimiento_del_inventario_del_equipamiento_informatico_y_telefonico/">Mantenimiento del inventario del equipamiento informático y telefónico</a>'+
+              '<br/>'+
+              '<span class="small">Etiquetas: <i>Proceso, Fase 1 (del Manual 1.0), Administración General</i></span></h6>'
+              );
+          markers.addLayer(marker);
+
+          marker = L.marker(
+              [37.8842828, -4.7819495],
+              {
+                title: 'Mantenimiento de usuarios de la aplicación ECO',
+                icon: icon_oil_drop
+              }
+            ).bindPopup (
+              '<h6><a href="mapas/Mantenimiento_de_usuarios_de_la_aplicacion_ECO/">Mantenimiento de usuarios de la aplicación ECO</a>'+
+              '<br/>'+
+              '<span class="small">Etiquetas: <i>Proceso, Fase 1 (del Manual 1.0), Administración General</i></span></h6>'
+              );
+          markers.addLayer(marker);
+
+          marker = L.marker(
+              [37.8842828, -4.7819495],
+              {
+                title: 'Maquetación de revista',
+                icon: icon_oil_drop
+              }
+            ).bindPopup (
+              '<h6><a href="mapas/Maquetacion_de_revista/">Maquetación de revista</a>'+
+              '<br/>'+
+              '<span class="small">Etiquetas: <i>Proceso, Fase 4, Administración General</i></span></h6>'
+              );
+          markers.addLayer(marker);
+
+          marker = L.marker(
+              [37.4822431, -5.9436615],
+              {
+                title: 'Mecanismos de búsquedas y gestión de candidatos',
+                icon: icon_oil_drop
+              }
+            ).bindPopup (
+              '<h6><a href="mapas/Mecanismos_de_busquedas_y_gestion_de_candidatos/">Mecanismos de búsquedas y gestión de candidatos</a>'+
+              '<br/>'+
+              '<span class="small">Etiquetas: <i>Proceso, Fase 0 (del Manual 1.0), Empleo</i></span></h6>'
+              );
+          markers.addLayer(marker);
+
+          marker = L.marker(
+              [37.3802139, -5.9931103],
+              {
+                title: 'Planificación y puesta en marcha de los talleres de formación de dirección',
+                icon: icon_oil_drop
+              }
+            ).bindPopup (
+              '<h6><a href="mapas/Planificacion_y_puesta_en_marcha_de_los_talleres_de_formacion_de_direccion/">Planificación y puesta en marcha de los talleres de formación de dirección</a>'+
+              '<br/>'+
+              '<span class="small">Etiquetas: <i>Proceso, Fase 4, Administración General</i></span></h6>'
+              );
+          markers.addLayer(marker);
+
+          marker = L.marker(
+              [37.3752813, -5.9638453],
+              {
+                title: 'Plan de Actuación de Zona. Planes de Centro de los Centros afectados.',
+                icon: icon_oil_drop
+              }
+            ).bindPopup (
+              '<h6><a href="mapas/Plan_de_Actuacion_de_Zona__Planes_de_Centro_de_los_Centros_afectados_/">Plan de Actuación de Zona. Planes de Centro de los Centros afectados.</a>'+
+              '<br/>'+
+              '<span class="small">Etiquetas: <i>Organización, Fase 4, Administración General</i></span></h6>'
+              );
+          markers.addLayer(marker);
+
+          marker = L.marker(
+              [37.8842828, -4.7819495],
+              {
+                title: 'Plataformado y configuración inicial de un ordenador',
+                icon: icon_oil_drop
+              }
+            ).bindPopup (
+              '<h6><a href="mapas/Plataformado_y_configuracion_inicial_de_un_ordenador/">Plataformado y configuración inicial de un ordenador</a>'+
+              '<br/>'+
+              '<span class="small">Etiquetas: <i>Proceso, Fase 1 (del Manual 1.0), Administración General</i></span></h6>'
+              );
+          markers.addLayer(marker);
+
+          marker = L.marker(
+              [37.8842828, -4.7819495],
+              {
+                title: 'Preparación de una videoconferencia mediante red corporativa',
+                icon: icon_oil_drop
+              }
+            ).bindPopup (
+              '<h6><a href="mapas/Preparacion_de_una_videoconferencia_mediante_red_corporativa/">Preparación de una videoconferencia mediante red corporativa</a>'+
+              '<br/>'+
+              '<span class="small">Etiquetas: <i>Proceso, Fase 2 (del Manual 1.0), Administración General</i></span></h6>'
+              );
+          markers.addLayer(marker);
+
+          marker = L.marker(
+              [37.3869618, -5.9875628],
+              {
+                title: 'Procedimientos operativos',
+                icon: icon_oil_drop
+              }
+            ).bindPopup (
+              '<h6><a href="mapas/Procedimientos_operativos/">Procedimientos operativos</a>'+
+              '<br/>'+
+              '<span class="small">Etiquetas: <i>Proceso, Fase 4, Administración General</i></span></h6>'
+              );
+          markers.addLayer(marker);
+
+          marker = L.marker(
+              [37.18288, -3.6020075],
+              {
+                title: 'Procesos de Facturación de contratación menor',
+                icon: icon_oil_drop
+              }
+            ).bindPopup (
+              '<h6><a href="mapas/Procesos_de_Facturacion_de_contratacion_menor_/">Procesos de Facturación de contratación menor</a>'+
+              '<br/>'+
+              '<span class="small">Etiquetas: <i>Proceso, Fase 4, Administración General</i></span></h6>'
+              );
+          markers.addLayer(marker);
+
+          marker = L.marker(
+              [37.8842828, -4.7819495],
+              {
+                title: 'Publicación de noticias y avisos en la Intranet',
+                icon: icon_oil_drop
+              }
+            ).bindPopup (
+              '<h6><a href="mapas/Publicacion_de_noticias_y_avisos_en_la_Intranet/">Publicación de noticias y avisos en la Intranet</a>'+
+              '<br/>'+
+              '<span class="small">Etiquetas: <i>Proceso, Fase 1 (del Manual 1.0), Administración General</i></span></h6>'
+              );
+          markers.addLayer(marker);
+
+          marker = L.marker(
+              [37.2599688, -6.9573174],
+              {
+                title: 'Recepción por parte del contribuyente de las  notificaciones y requerimientos',
+                icon: icon_oil_drop
+              }
+            ).bindPopup (
+              '<h6><a href="mapas/Recepcion_por_parte_del_contribuyente_de_las__notificaciones_y_requerimientos/">Recepción por parte del contribuyente de las  notificaciones y requerimientos</a>'+
+              '<br/>'+
+              '<span class="small">Etiquetas: <i>Proceso, Fase 4, Administración General</i></span></h6>'
+              );
+          markers.addLayer(marker);
+
+          marker = L.marker(
+              [37.3802139, -5.9931103],
+              {
+                title: 'Reclamaciones y sanciones',
+                icon: icon_oil_drop
+              }
+            ).bindPopup (
+              '<h6><a href="mapas/Reclamaciones_y_sanciones/">Reclamaciones y sanciones</a>'+
+              '<br/>'+
+              '<span class="small">Etiquetas: <i>Proceso, Fase 4, Administración General</i></span></h6>'
+              );
+          markers.addLayer(marker);
+
+          marker = L.marker(
+              [37.8842828, -4.7819495],
+              {
+                title: 'Recuperación de archivos borrados de una unidad de red',
+                icon: icon_oil_drop
+              }
+            ).bindPopup (
+              '<h6><a href="mapas/Recuperacion_de_archivos_borrados_de_una_unidad_de_red/">Recuperación de archivos borrados de una unidad de red</a>'+
+              '<br/>'+
+              '<span class="small">Etiquetas: <i>Proceso, Fase 4 (del Manual 1.0), Administración General</i></span></h6>'
+              );
+          markers.addLayer(marker);
+
+          marker = L.marker(
+              [37.4822431, -5.9436615],
+              {
+                title: 'Registro de ofertas',
+                icon: icon_oil_drop
+              }
+            ).bindPopup (
+              '<h6><a href="mapas/Registro_de_ofertas/">Registro de ofertas</a>'+
+              '<br/>'+
+              '<span class="small">Etiquetas: <i>Proceso, Fase 0 (del Manual 1.0), Empleo</i></span></h6>'
+              );
+          markers.addLayer(marker);
+
+          marker = L.marker(
+              [37.8773685, -4.7876985],
+              {
+                title: 'Resolución de subvenciones en edificios',
+                icon: icon_oil_drop
+              }
+            ).bindPopup (
+              '<h6><a href="mapas/Resolucion_de_subvenciones_en_edificios/">Resolución de subvenciones en edificios</a>'+
+              '<br/>'+
+              '<span class="small">Etiquetas: <i>Proceso, Fase 4, Administración General</i></span></h6>'
+              );
+          markers.addLayer(marker);
+
+          marker = L.marker(
+              [36.8238722, -2.4433644],
+              {
+                title: 'Técnico de Prevención de Riesgos Laborales',
+                icon: icon_oil_drop
+              }
+            ).bindPopup (
+              '<h6><a href="mapas/Tecnico_de_Prevencion_de_Riesgos_Laborales/">Técnico de Prevención de Riesgos Laborales</a>'+
+              '<br/>'+
+              '<span class="small">Etiquetas: <i>Puesto, Fase 4 (del 1º Curso de Conocimiento Crítico), Administración General</i></span></h6>'
               );
           markers.addLayer(marker);
 
@@ -712,6 +701,17 @@
       // Parece que moveend se dispara siempre y además se dispara siempre el último
 
       map.addControl( search_control ); //inizialize search control
+
+      // Añado etiqueta aria-label a (los) campo(s) de búsqueda (puede que no pase el test WAI si se añade con JS)
+      document.querySelectorAll('input.search-input')
+              .forEach(function(campo) {
+                campo.setAttribute('aria-label', "Buscar");
+              });
+      document.querySelectorAll('a.search-button')
+              .forEach(function(campo) {
+                campo.setAttribute('aria-label', "Buscar");
+              });
+              
 
 
 

@@ -1,21 +1,23 @@
 
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="utf-8">
   <title>Acerca del Atlas de Conocimiento Crítico | Atlas de Conocimiento Crítico, versión ligera y estática</title>
-  <base href="/">
+  <base href="https://conocimientocritico.github.io/">
   <meta name="description" content="Atlas de Mapas de Conocimiento Crítico, versión ligera y estática, del programa de Embajadores del Conocimiento (IAAP - Junta de Andalucía)">
   <meta name="keywords" content="static site, conocimiento crítico, gestión del conocimiento, knowledge management, embajadores del conocimiento, ">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="/favicon-atlas.ico">
+  <meta http-equiv="Content-Type" content="text/html">
+  <link rel="icon" type="image/x-icon" href="favicon-atlas.ico">
   
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
     crossorigin="anonymous">
   
 
-  <link rel="stylesheet" href="css/leaflet.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/leaflet.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
@@ -53,13 +55,13 @@
 </head>
 
 <body>
-    <a href="/sitemap.html"></a>
+    <a href="sitemap.html" alt="Mapa del sitio" aria-label="Mapa del sitio"></a>
 
     
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <a id="back_link" href="javascript:history.back()">
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" aria-label="Barra de navegación">
+      <a id="back_link" href="javascript:history.back()" aria-label="Volver">
         <span class="carousel-control-prev-icon"></span>
-      </a>&nbsp;&nbsp;
+      </a>
       <script>
         // Desde https://stackoverflow.com/questions/8814472/how-to-make-an-html-back_link
         // Respuesta: https://stackoverflow.com/posts/46163215
@@ -81,15 +83,15 @@
           return false;
         }
       </script>
-      <a class="navbar-brand text-light" href="/atlas.html">Atlas de Conocimiento Crítico</a>
+      <a class="navbar-brand text-light font-weight-bold" href="index.html" aria-label="Página principal">Atlas de Conocimiento Crítico</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
       </button>
-      <div div class="collapse navbar-collapse" id="collapsingNavbar">
+      <div div class="collapse navbar-collapse" id="collapsingNavbar" aria-label="Menú">
         <div class="navbar-nav">
-          <a class="nav-item nav-link" href="mapas">Mapas</a>
-          <a class="nav-item nav-link" href="mapas/animacion">Animación</a>
-          <a class="nav-item nav-link" href="acerca-de">Acerca de...</a>
+          <a class="nav-item nav-link text-light" href="mapas/" aria-label="Mapas">Mapas</a>
+          <a class="nav-item nav-link text-light" href="mapas/animacion/" aria-label="Animación">Animación</a>
+          <a class="nav-item nav-link text-light" href="acerca-de/" aria-label="Acerca de...">Acerca de...</a>
         </div>
       </div>
   </nav>
@@ -99,15 +101,15 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-4">
-                    <h4>Acerca del Atlas de Conocimiento Crítico</h4>
+                    <h4  aria-label="Título">Acerca del Atlas de Conocimiento Crítico</h4>
                     <br>
-                    <div><p>Tienes ante ti el <strong>Atlas de Conocimiento Crítico</strong>, un directorio geolocalizado de mapas de conocimiento crítico, parte de una metodología enmarcada en la disciplina de Gestión del Conocimiento. Entra, mira nuestro trabajo y si tienes cualquier duda, entra en <a href="https://ws168.juntadeandalucia.es/wikigestionC/index.php?title=Mapa_de_Conocimiento_Cr%C3%ADtico">nuestra página del Wiki de Gestión del Conocimiento</a>.</p>
+                    <div aria-label="Texto de la página"><p>Tienes ante ti el <strong>Atlas de Conocimiento Crítico</strong>, un directorio geolocalizado de mapas de conocimiento crítico, parte de una metodología enmarcada en la disciplina de Gestión del Conocimiento. Entra, mira nuestro trabajo y si tienes cualquier duda, entra en <a href="https://ws168.juntadeandalucia.es/wikigestionC/index.php?title=Mapa_de_Conocimiento_Cr%C3%ADtico">nuestra página del Wiki de Gestión del Conocimiento</a>.</p>
 </div>
                 </div>
                 <div class="col-md-8">            
-                    <div class="video embed-responsive embed-responsive-16by9">
+                    <div class="video embed-responsive embed-responsive-16by9" aria-label="Vídeo">
                         <iframe width=960 height=540 src="https://www.youtube.com/embed/lwbcvxzeXUI"
-                        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen title="Marco de vídeo"></iframe>
                     </div>
                 </div>
             </div>
