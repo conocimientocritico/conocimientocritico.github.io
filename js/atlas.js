@@ -2,6 +2,7 @@
 
 // Suponemos que ya hemos cargado Leaflet
 
+console.log (document.head.querySelector("[name~=application-name][content]").content +', versión ' + document.head.querySelector("[name~=version][content]").content);
 console.log ('Iniciando scripts de Atlas...');
 
 function init_scale_options () {

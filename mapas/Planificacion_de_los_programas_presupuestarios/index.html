@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Planificación de los programas presupuestarios | Atlas de Mapas de Conocimiento Crítico, del programa de Embajadores del Conocimiento (IAAP - Junta de Andalucía)</title>
+  <base href="https://conocimientocritico.github.io/">
+  <meta name="description" content="Atlas de Mapas de Conocimiento Crítico, del programa de Embajadores del Conocimiento (IAAP - Junta de Andalucía)">
+  <meta name="keywords" content="static site, conocimiento crítico, gestión del conocimiento, knowledge management, embajadores del conocimiento, Proceso, Plan de acción (Fase 6 del 2º Curso de Conocimiento Crítico), Administración General">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="bakeit-v0.2.6 (PedroBlanco/bakeit)">
+  <meta name="application-name" content="Atlas de Conocimiento Crítico">
+  <meta name="version" content="1.0.4">
+  <meta http-equiv="Content-Type" content="text/html">
+  <link rel="icon" type="image/x-icon" href="favicon-atlas.ico">
+  
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+    crossorigin="anonymous">
+  
+
+  <link rel="stylesheet" type="text/css" href="css/leaflet.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+    crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" 
+    crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" 
+    crossorigin="anonymous"></script>
+
+
+  <script type="text/javascript" src="js/leaflet.js"></script>
+
+  <script type="text/javascript" src="js/leaflet-wfst.min.js"></script>
+
+  
+
+
+  <script type="text/javascript" src="https://stamen-maps.a.ssl.fastly.net/js/tile.stamen.js?v1.3.0"></script>
+
+  <script type="text/javascript" src="js/Nomenclator.js"></script>
+
+  <script type="text/javascript" src="js/leaflet.LimitZoom.js"></script>
+
+  <script type="text/javascript" src="js/leaflet.ContinuousZoom.js"></script>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
+
+
+  <script type="text/javascript" src="js/atlas.js"></script>
+
+</head>
+
+<body>
+    <a href="sitemap.html" alt="Mapa del sitio" aria-label="Mapa del sitio"></a>
+
+    
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" aria-label="Barra de navegación">
+      <a id="back_link" href="javascript:history.back()" aria-label="Volver">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <script>
+        // Desde https://stackoverflow.com/questions/8814472/how-to-make-an-html-back_link
+        // Respuesta: https://stackoverflow.com/posts/46163215
+          var element = document.getElementById('back_link');
+
+        // Provide a standard href to facilitate standard browser features such as 
+        //  - Hover to see link
+        //  - Right click and copy link
+        //  - Right click and open in new tab
+        element.setAttribute('href', document.referrer);
+
+        // We can't let the browser use the above href for navigation. If it does, 
+        // the browser will think that it is a regular link, and place the current 
+        // page on the browser history, so that if the user clicks "back" again,
+        // it'll actually return to this page. We need to perform a native back to
+        // integrate properly into the browser's history behavior
+        element.onclick = function() {
+          history.back();
+          return false;
+        }
+      </script>
+      <a class="navbar-brand text-light font-weight-bold" href="index.html" aria-label="Página principal">Atlas de Conocimiento Crítico</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div div class="collapse navbar-collapse" id="collapsingNavbar" aria-label="Menú">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link text-light" href="mapas/" aria-label="Mapas">Mapas</a>
+          <a class="nav-item nav-link text-light" href="autores/" aria-label="Autores">Autores</a>
+          <a class="nav-item nav-link text-light" href="mapas/animacion/" aria-label="Animación">Animación</a>
+          <a class="nav-item nav-link text-light" href="acerca-de/" aria-label="Acerca de...">Acerca de...</a>
+        </div>
+      </div>
+  </nav>
+
+    
+    <div class="content-window">
+        <div class="container-fluid">
+            <div class="col-md-12">
+                <p aria-label="Texto de la página"></p>
+                <div arial-label="Datos del mapa">
+                    <h1>Mapa: Planificación de los programas presupuestarios</h1>
+                    <h2>Autor/a: <a href="autores/Lourdes_Perez_Morgado/">Lourdes Pérez Morgado</a></h2>
+                    <ul class="nav nav-tabs" id="myTab" role="tablist" aria-label="Lista de pestañas">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" id="mapa-tab" data-toggle="tab" href="#mapa" role="tab" aria-controls="mapa" aria-selected="true" aria-label="Fichas del mapa">Fichas del Mapa</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="descripcion-tab" data-toggle="tab" href="#descripcion" role="tab" aria-controls="descripcion" aria-selected="false">Descripción</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent" aria-label="Pestañas">
+                        <div class="tab-pane fade show active" id="mapa" role="tabpanel" aria-labelledby="mapa-tab">
+                            <iframe title="Ficha del mapa Planificación de los programas presupuestarios" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSx0PIlCSqKOEhO8vMb_XnjDsZCq-ipm0VNJ9-QVNl2sR494kkY_fHgQa_yngDB6YcEcv9SoV9QwKoc/pubhtml?widget&#x3D;true&amp;amp;headers&#x3D;false?widget=true&headers=false&chrome=false" class="embedded-frame" title="Ficha embebida" scrolling="no"></iframe>
+                        </div>
+                        <div class="tab-pane fade" id="descripcion" role="tabpanel" aria-labelledby="descripcion-tab">
+                            <div class="card">
+                            <div class="card-body">
+                            <p class="card-text lead" aria-label="Descripción del mapa">Orientar al desempeño la planificación de los programas presupuestarios como paso previo a la implantación de un sistema de evaluación</p>
+                            <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSx0PIlCSqKOEhO8vMb_XnjDsZCq-ipm0VNJ9-QVNl2sR494kkY_fHgQa_yngDB6YcEcv9SoV9QwKoc/pubhtml?widget&#x3D;true&amp;amp;headers&#x3D;false" target="_blank" class="card-link" aria-label="Enlace a las fichas">Enlace a las fichas de este mapa.</a>
+                            <hr>
+                            <h4 class="card-title">Metadatos</h4>
+                            <table class="table table-striped table-bordered" aria-label="Tabla de metadatos">
+                                <thead aria-label="Cabecera de tabla">
+                                    <tr aria-label="Fila de cabecera">
+                                        <th scope="col" align="center">
+                                            <abbr title="Fecha de creación (aproximada)">Creación</abbr>
+                                        </th>
+                                        <th scope="col" align="center">
+                                            <abbr title="Fecha de la última actualización (aproximada)">Actualización</abbr>
+                                        </th>
+                                        <th>
+                                            <abbr title="Administración Pública en la que se encuadra el mapa">Administración</abbr> <a href="https://ws168.juntadeandalucia.es/wikigestionC/index.php?title=Glosario_de_t%C3%A9rminos_de_Conocimiento_Cr%C3%ADtico#Administracion">?</a>
+                                        </th>
+                                        <th scope="col" align="center">
+                                            <abbr title="Punto de desarrollo se encuentra el mapa">Estado/fase de desarrollo</abbr> <a href="https://ws168.juntadeandalucia.es/wikigestionC/index.php?title=Glosario_de_t%C3%A9rminos_de_Conocimiento_Cr%C3%ADtico#Fases">?</a>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody aria-label="Datos de tabla">
+                                    <tr aria-label="Fila de datos">
+                                        <td align="center" aria-label="Fecha de creación">
+                                            22/05/2022
+                                        </td>
+                                        <td align="center" aria-label="Fecha de actualización">
+                                            22/05/2022
+                                        </td>
+                                        <td aria-label="Administración">
+                                            Administración General
+                                        </td>
+                                        <td align="center" aria-label="Estado o fase de desarrollo">
+                                            Plan de acción (Fase 6 del 2º Curso de Conocimiento Crítico)
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+
+</html>

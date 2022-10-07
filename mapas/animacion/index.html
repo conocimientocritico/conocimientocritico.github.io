@@ -4,12 +4,13 @@
 <head>
   <meta charset="utf-8">
   <title>Mapas | Atlas de Mapas de Conocimiento Crítico, del programa de Embajadores del Conocimiento (IAAP - Junta de Andalucía)</title>
-  <base href="https://pedroblanco.github.io/mapas/">
+  <base href="https://conocimientocritico.github.io/">
   <meta name="description" content="Atlas de Mapas de Conocimiento Crítico, del programa de Embajadores del Conocimiento (IAAP - Junta de Andalucía)">
   <meta name="keywords" content="static site, conocimiento crítico, gestión del conocimiento, knowledge management, embajadores del conocimiento, ">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="generator" content="bakeit-v0.2.6 (PedroBlanco/bakeit)">
-  <meta name="version" content="1.0.2">
+  <meta name="application-name" content="Atlas de Conocimiento Crítico">
+  <meta name="version" content="1.0.4">
   <meta http-equiv="Content-Type" content="text/html">
   <link rel="icon" type="image/x-icon" href="favicon-atlas.ico">
   
@@ -73,6 +74,7 @@
       <div div class="collapse navbar-collapse" id="collapsingNavbar" aria-label="Menú">
         <div class="navbar-nav">
           <a class="nav-item nav-link text-light" href="mapas/" aria-label="Mapas">Mapas</a>
+          <a class="nav-item nav-link text-light" href="autores/" aria-label="Autores">Autores</a>
           <a class="nav-item nav-link text-light" href="mapas/animacion/" aria-label="Animación">Animación</a>
           <a class="nav-item nav-link text-light" href="acerca-de/" aria-label="Acerca de...">Acerca de...</a>
         </div>
@@ -118,8 +120,17 @@
       _attribution += 'Watercolor data by <a href="http://openstreetmap.org">OpenStreetMap</a>, <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.';
 
       // Capas de etiquetas
-      var stamen_layer_tonerlines = new L.StamenTileLayer("toner-hybrid", {attribution: '', attributionControl: false});
-      _attribution += 'Toner data by <a href="http://openstreetmap.org">OpenStreetMap</a>, <a href="http://www.openstreetmap.org/copyright">ODbL</a>.';
+      // Cambio la capa de etiquetas toponímicas a una del IGN
+      var capaToponimos = new L.tileLayer (
+        'https://www.ign.es/wmts/ign-base?layer=IGNBaseOrto&style=default&tilematrixset=GoogleMapsCompatible&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image/png&&TileMatrix={z}&TileCol={x}&TileRow={y}',
+        {
+          maxZoom:18,
+          minZoom:1,
+          scheme:'xyz',
+          continuousWorld:true,
+          attribution:"© IGN"
+        }
+        );
       
       stamen_layer_watercolor_low.options.maxNativeZoom = 14;
       stamen_layer_watercolor_high.options.maxNativeZoom = 17;
@@ -232,6 +243,21 @@
 
 
             marker = L.marker(
+                [37.3131963, -5.9748062],
+                {
+                  title: 'BOJA: Mantenimiento de la Certificación ISO-9001 y Cartas de Servicio',
+                  icon: icon_oil_drop
+                }
+              ).bindPopup (
+                '<h6><a href="mapas/BOJA__Mantenimiento_de_la_Certificacion_ISO-9001_y_Cartas_de_Servicio/">BOJA: Mantenimiento de la Certificación ISO-9001 y Cartas de Servicio</a>'+
+                '<br/>'+
+                '<span class="small">Etiquetas: <i>Proceso, Plan de acción (Fase 6 del 2º Curso de Conocimiento Crítico), Administración General</i></span></h6>'
+              );
+          
+          marker_array.push ( marker );
+
+
+            marker = L.marker(
                 [37.8866752, -4.7826835],
                 {
                   title: 'Calificación Instalaciones Turísticas',
@@ -307,6 +333,21 @@
 
 
             marker = L.marker(
+                [37.3661235, -5.9833531],
+                {
+                  title: 'Elaboración de las estadísticas anuales de controles realizados en las ayudas FEADER a Industrias Agroalimentarias',
+                  icon: icon_oil_drop
+                }
+              ).bindPopup (
+                '<h6><a href="mapas/Elaboracion_de_las_estadisticas_anuales_de_controles_realizados_en_las_ayudas_FEADER_a_Industrias_Agroalimentarias/">Elaboración de las estadísticas anuales de controles realizados en las ayudas FEADER a Industrias Agroalimentarias</a>'+
+                '<br/>'+
+                '<span class="small">Etiquetas: <i>Proceso, Plan de acción (Fase 6 del 2º Curso de Conocimiento Crítico), Administración General</i></span></h6>'
+              );
+          
+          marker_array.push ( marker );
+
+
+            marker = L.marker(
                 [36.8360391, -2.4634845],
                 {
                   title: 'Elevar Informe a la S. G. Industria y Minas',
@@ -316,6 +357,21 @@
                 '<h6><a href="mapas/Elevar_Informe_a_la_S__G__Industria_y_Minas/">Elevar Informe a la S. G. Industria y Minas</a>'+
                 '<br/>'+
                 '<span class="small">Etiquetas: <i>Proceso, Fase 4, Administración General</i></span></h6>'
+              );
+          
+          marker_array.push ( marker );
+
+
+            marker = L.marker(
+                [36.8347596, -2.4535596],
+                {
+                  title: 'Equilibrio demográfico sostenible',
+                  icon: icon_oil_drop
+                }
+              ).bindPopup (
+                '<h6><a href="mapas/Equilibrio_demografico_sostenible/">Equilibrio demográfico sostenible</a>'+
+                '<br/>'+
+                '<span class="small">Etiquetas: <i>Estrategia, Plan de acción (Fase 6 del 2º Curso de Conocimiento Crítico), Administración General</i></span></h6>'
               );
           
           marker_array.push ( marker );
@@ -474,11 +530,11 @@
             marker = L.marker(
                 [37.8842828, -4.7819495],
                 {
-                  title: 'Maquetación de revista',
+                  title: 'Maquetación de revista EnRed@2.0',
                   icon: icon_oil_drop
                 }
               ).bindPopup (
-                '<h6><a href="mapas/Maquetacion_de_revista/">Maquetación de revista</a>'+
+                '<h6><a href="mapas/Maquetacion_de_revista_EnRed@2_0/">Maquetación de revista EnRed@2.0</a>'+
                 '<br/>'+
                 '<span class="small">Etiquetas: <i>Proceso, Fase 4, Administración General</i></span></h6>'
               );
@@ -496,6 +552,21 @@
                 '<h6><a href="mapas/Mecanismos_de_busquedas_y_gestion_de_candidatos/">Mecanismos de búsquedas y gestión de candidatos</a>'+
                 '<br/>'+
                 '<span class="small">Etiquetas: <i>Proceso, Fase 0 (del Manual 1.0), Empleo</i></span></h6>'
+              );
+          
+          marker_array.push ( marker );
+
+
+            marker = L.marker(
+                [37.3936566, -6.0291124],
+                {
+                  title: 'Planificación de los programas presupuestarios',
+                  icon: icon_oil_drop
+                }
+              ).bindPopup (
+                '<h6><a href="mapas/Planificacion_de_los_programas_presupuestarios/">Planificación de los programas presupuestarios</a>'+
+                '<br/>'+
+                '<span class="small">Etiquetas: <i>Proceso, Plan de acción (Fase 6 del 2º Curso de Conocimiento Crítico), Administración General</i></span></h6>'
               );
           
           marker_array.push ( marker );
@@ -586,6 +657,21 @@
                 '<h6><a href="mapas/Procesos_de_Facturacion_de_contratacion_menor_/">Procesos de Facturación de contratación menor</a>'+
                 '<br/>'+
                 '<span class="small">Etiquetas: <i>Proceso, Fase 4, Administración General</i></span></h6>'
+              );
+          
+          marker_array.push ( marker );
+
+
+            marker = L.marker(
+                [37.2767136, -6.9073456],
+                {
+                  title: 'Protocolización de los reconocimientos médicos',
+                  icon: icon_oil_drop
+                }
+              ).bindPopup (
+                '<h6><a href="mapas/Protocolizacion_de_los_reconocimientos_medicos/">Protocolización de los reconocimientos médicos</a>'+
+                '<br/>'+
+                '<span class="small">Etiquetas: <i>Área, Plan de acción (Fase 6 del 2º Curso de Conocimiento Crítico), Sanidad</i></span></h6>'
               );
           
           marker_array.push ( marker );
@@ -716,7 +802,7 @@
 
       map.addLayer(stamen_layer_watercolor_low);
       map.addLayer(stamen_layer_watercolor_high);
-      map.addLayer(stamen_layer_tonerlines);
+      map.addLayer(capaToponimos);
 
       // map.addLayer(markers);
 
