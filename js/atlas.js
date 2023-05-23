@@ -33,26 +33,6 @@ function init_cluster_options () {
     };
 }
 
-function init_wfstPointOptions () {
-    return {
-        crs: L.CRS.EPSG4326,
-        showExisting: true,
-        geometryField: 'geom',
-        url: `http://localhost:8080/geoserver/wfs`,
-        typeNS: 'test',
-        typeName: 'test',
-        maxFeatures: 90,
-        opacity: 1,
-        style: function (layer) {
-          // you can use if statemt etc
-          return {
-            color: 'black',
-            weight: 1
-          }
-        }
-    };
-}
-
 // TODO: Hacer comprobaciones sobre _zoom
 function init_map_options ( _zoom ) {
     return {

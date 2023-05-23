@@ -10,7 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="generator" content="bakeit-v0.2.6 (PedroBlanco/bakeit)">
   <meta name="application-name" content="Atlas de Conocimiento Crítico">
-  <meta name="version" content="1.0.4">
+  <meta name="version" content="1.0.5">
   <meta http-equiv="Content-Type" content="text/html">
   <link rel="icon" type="image/x-icon" href="favicon-atlas.ico">
   
@@ -103,8 +103,6 @@
 
       var cluster_options = init_cluster_options ();
 
-      var wfstPointOptions = init_wfstPointOptions ();
-
       var options = init_map_options ( 8 );
 
       var icon_oil_drop = init_icon_oil_drop ();
@@ -140,9 +138,6 @@
           attribution:"© IGN"
         }
         );
-
-
-
       
       stamen_layer_watercolor_low.options.maxNativeZoom = 14;
       stamen_layer_watercolor_high.options.maxNativeZoom = 17;
@@ -239,6 +234,19 @@
           markers.addLayer(marker);
 
           marker = L.marker(
+              [37.3880914, -5.9960248],
+              {
+                title: 'Área de Tramitación de Subvenciones del IAJ',
+                icon: icon_oil_drop
+              }
+            ).bindPopup (
+              '<h6><a href="mapas/Area_de_Tramitacion_de_Subvenciones_del_IAJ/">Área de Tramitación de Subvenciones del IAJ</a>'+
+              '<br/>'+
+              '<span class="small">Etiquetas: <i>Área, Plan de acción (3º Curso de Conocimiento Crítico), Administración General</i></span></h6>'
+              );
+          markers.addLayer(marker);
+
+          marker = L.marker(
               [37.3131963, -5.9748062],
               {
                 title: 'BOJA: Mantenimiento de la Certificación ISO-9001 y Cartas de Servicio',
@@ -317,6 +325,19 @@
           markers.addLayer(marker);
 
           marker = L.marker(
+              [37.3913367, -6.0128315],
+              {
+                title: 'Director de proyecto del Servicio de desarrollo y publicación de trámites y procedimientos administrativos en la Ventanilla Electrónica Centralizada de la Junta de Andalucía',
+                icon: icon_oil_drop
+              }
+            ).bindPopup (
+              '<h6><a href="mapas/Director_de_proyecto_del_Servicio_de_desarrollo_y_publicacion_de_tramites_y_procedimientos_administrativos_en_la_Ventanilla_Electronica_Centralizada_de_la_Junta_de_Andalucia/">Director de proyecto del Servicio de desarrollo y publicación de trámites y procedimientos administrativos en la Ventanilla Electrónica Centralizada de la Junta de Andalucía</a>'+
+              '<br/>'+
+              '<span class="small">Etiquetas: <i>Cargo, Plan de acción (3º Curso de Conocimiento Crítico), Administración General</i></span></h6>'
+              );
+          markers.addLayer(marker);
+
+          marker = L.marker(
               [37.3661235, -5.9833531],
               {
                 title: 'Elaboración de las estadísticas anuales de controles realizados en las ayudas FEADER a Industrias Agroalimentarias',
@@ -365,6 +386,32 @@
               '<h6><a href="mapas/Evaluacion_de_cursos_de_formacion/">Evaluación de cursos de formación</a>'+
               '<br/>'+
               '<span class="small">Etiquetas: <i>Área, Fase 4, Administración General</i></span></h6>'
+              );
+          markers.addLayer(marker);
+
+          marker = L.marker(
+              [37.1769764, -3.5961089],
+              {
+                title: 'Gestionar el Depósito legal de las publicaciones periódicas electrónicas',
+                icon: icon_oil_drop
+              }
+            ).bindPopup (
+              '<h6><a href="mapas/Gestionar_el_Deposito_legal_de_las_publicaciones_periodicas_electronicas/">Gestionar el Depósito legal de las publicaciones periódicas electrónicas</a>'+
+              '<br/>'+
+              '<span class="small">Etiquetas: <i>Organización, Plan de acción (3º Curso de Conocimiento Crítico), Administración al servicio de la Justicia</i></span></h6>'
+              );
+          markers.addLayer(marker);
+
+          marker = L.marker(
+              [37.4034502, -6.0216612],
+              {
+                title: 'Gestión de las Redes Sociales del Archivo General de Andalucía',
+                icon: icon_oil_drop
+              }
+            ).bindPopup (
+              '<h6><a href="mapas/Gestion_de_las_Redes_Sociales_del_Archivo_General_de_Andalucia/">Gestión de las Redes Sociales del Archivo General de Andalucía</a>'+
+              '<br/>'+
+              '<span class="small">Etiquetas: <i>Área, Plan de acción (3º Curso de Conocimiento Crítico), Administración General</i></span></h6>'
               );
           markers.addLayer(marker);
 
@@ -603,6 +650,32 @@
           markers.addLayer(marker);
 
           marker = L.marker(
+              [37.3479904, -6.0440975],
+              {
+                title: 'Proceso de ejecución en procesos de lanzamientos y desahucios.',
+                icon: icon_oil_drop
+              }
+            ).bindPopup (
+              '<h6><a href="mapas/Proceso_de_ejecucion_en_procesos_de_lanzamientos_y_desahucios__/">Proceso de ejecución en procesos de lanzamientos y desahucios.</a>'+
+              '<br/>'+
+              '<span class="small">Etiquetas: <i>Proceso, Plan de acción (3º Curso de Conocimiento Crítico), Administración al servicio de la Justicia</i></span></h6>'
+              );
+          markers.addLayer(marker);
+
+          marker = L.marker(
+              [37.8842828, -4.7819495],
+              {
+                title: 'Proceso de plataformado y configuración inicial de equipos para puesto digital único',
+                icon: icon_oil_drop
+              }
+            ).bindPopup (
+              '<h6><a href="mapas/Proceso_de_plataformado_y_configuracion_inicial_de_equipos_para_puesto_digital_unico/">Proceso de plataformado y configuración inicial de equipos para puesto digital único</a>'+
+              '<br/>'+
+              '<span class="small">Etiquetas: <i>Proceso, Plan de acción (3º Curso de Conocimiento Crítico), Administración General</i></span></h6>'
+              );
+          markers.addLayer(marker);
+
+          marker = L.marker(
               [37.2767136, -6.9073456],
               {
                 title: 'Protocolización de los reconocimientos médicos',
@@ -625,6 +698,32 @@
               '<h6><a href="mapas/Publicacion_de_noticias_y_avisos_en_la_Intranet/">Publicación de noticias y avisos en la Intranet</a>'+
               '<br/>'+
               '<span class="small">Etiquetas: <i>Proceso, Fase 1 (del Manual 1.0), Administración General</i></span></h6>'
+              );
+          markers.addLayer(marker);
+
+          marker = L.marker(
+              [37.3861134, -5.9968646],
+              {
+                title: 'Puesto de Técnico de Administración, Servicio de Gestión de Inversiones y Contrataciones, Servicio Andaluz de Salud',
+                icon: icon_oil_drop
+              }
+            ).bindPopup (
+              '<h6><a href="mapas/Puesto_de_Tecnico_de_Administracion__Servicio_de_Gestion_de_Inversiones_y_Contrataciones__Servicio_Andaluz_de_Salud/">Puesto de Técnico de Administración, Servicio de Gestión de Inversiones y Contrataciones, Servicio Andaluz de Salud</a>'+
+              '<br/>'+
+              '<span class="small">Etiquetas: <i>Cargo, Plan de acción (3º Curso de Conocimiento Crítico), Sanidad</i></span></h6>'
+              );
+          markers.addLayer(marker);
+
+          marker = L.marker(
+              [37.2599688, -6.9573174],
+              {
+                title: 'Recepción por parte del contribuyente de las notificaciones y requerimientos',
+                icon: icon_oil_drop
+              }
+            ).bindPopup (
+              '<h6><a href="mapas/Recepcion_por_parte_del_contribuyente_de_las_notificaciones_y_requerimientos/">Recepción por parte del contribuyente de las notificaciones y requerimientos</a>'+
+              '<br/>'+
+              '<span class="small">Etiquetas: <i>Proceso, Fase 4, Administración General</i></span></h6>'
               );
           markers.addLayer(marker);
 
@@ -703,6 +802,32 @@
               '<h6><a href="mapas/Tecnico_de_Prevencion_de_Riesgos_Laborales/">Técnico de Prevención de Riesgos Laborales</a>'+
               '<br/>'+
               '<span class="small">Etiquetas: <i>Puesto, Fase 4 (del 1º Curso de Conocimiento Crítico), Administración General</i></span></h6>'
+              );
+          markers.addLayer(marker);
+
+          marker = L.marker(
+              [36.8490091, -2.4661316],
+              {
+                title: 'Tramitación de la justificación de la subvención del Instituto Andaluz de la Mujer del ATENSOC',
+                icon: icon_oil_drop
+              }
+            ).bindPopup (
+              '<h6><a href="mapas/Tramitacion_de_la_justificacion_de_la_subvencion_del_Instituto_Andaluz_de_la_Mujer_del_ATENSOC/">Tramitación de la justificación de la subvención del Instituto Andaluz de la Mujer del ATENSOC</a>'+
+              '<br/>'+
+              '<span class="small">Etiquetas: <i>Proceso, Plan de acción (3º Curso de Conocimiento Crítico), Administración General</i></span></h6>'
+              );
+          markers.addLayer(marker);
+
+          marker = L.marker(
+              [37.4085304, -6.0089927],
+              {
+                title: 'Tramitar y gestionar el Plan de Formación Interna Anual del Servicio Andaluz de Empleo',
+                icon: icon_oil_drop
+              }
+            ).bindPopup (
+              '<h6><a href="mapas/Tramitar_y_gestionar_el_Plan_de_Formacion_Interna_Anual_del_Servicio_Andaluz_de_Empleo/">Tramitar y gestionar el Plan de Formación Interna Anual del Servicio Andaluz de Empleo</a>'+
+              '<br/>'+
+              '<span class="small">Etiquetas: <i>Área, Plan de acción (3º Curso de Conocimiento Crítico), Empleo</i></span></h6>'
               );
           markers.addLayer(marker);
 
