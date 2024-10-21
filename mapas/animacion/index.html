@@ -10,7 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="generator" content="bakeit-v0.2.6 (PedroBlanco/bakeit)">
   <meta name="application-name" content="Atlas de Conocimiento Crítico">
-  <meta name="version" content="1.0.6">
+  <meta name="version" content="1.0.7">
   <meta http-equiv="Content-Type" content="text/html">
   <meta name="dcterms.rights" content="https://eupl.eu/1.2/en/">
   <meta name="dcterms.rightsHolder" content="Pedro Blanco Wasmer">
@@ -66,13 +66,14 @@
 
     
   <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" aria-label="Barra de navegación">
-      <a class="navbar-brand text-light font-weight-bold" href="index.html" aria-label="Página principal">Atlas de Conocimiento Crítico <small><sup>v1.0.6</sup></small></a>
+      <a class="navbar-brand text-light font-weight-bold" href="index.html" aria-label="Página principal">Atlas de Conocimiento Crítico <small><sup>v1.0.7</sup></small></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
       </button>
       <div div class="collapse navbar-collapse" id="collapsingNavbar" aria-label="Menú">
         <div class="navbar-nav">
           <a class="nav-item nav-link text-light" href="mapas/" aria-label="Mapas">Mapas</a>
+          <a class="nav-item nav-link text-light" href="autores/" aria-label="Autores">Autores</a>
           <a class="nav-item nav-link text-light" href="mapas/animacion/" aria-label="Animación">Animación</a>
           <a class="nav-item nav-link text-light" href="acerca-de/" aria-label="Acerca de...">Acerca de...</a>
         </div>
@@ -137,7 +138,7 @@
                   icon: icon_oil_drop
                 }
               ).bindPopup (
-                '<h6><a href="mapas/Actividades__funciones_y_competencias/">Actividades, funciones y competencias</a>'+
+                '<h6><a href="/mapas/Actividades__funciones_y_competencias/">Actividades, funciones y competencias</a>'+
                 '<br/>'+
                 '<span class="small">Etiquetas: <i>Área, Fase 4, Administración General</i></span></h6>'
               );
@@ -152,7 +153,7 @@
                   icon: icon_oil_drop
                 }
               ).bindPopup (
-                '<h6><a href="mapas/Actualizacion_de_procedimientos_preventivos_/">Actualización de procedimientos preventivos</a>'+
+                '<h6><a href="/mapas/Actualizacion_de_procedimientos_preventivos_/">Actualización de procedimientos preventivos</a>'+
                 '<br/>'+
                 '<span class="small">Etiquetas: <i>Área, Fase 4, Sanidad</i></span></h6>'
               );
@@ -167,9 +168,24 @@
                   icon: icon_oil_drop
                 }
               ).bindPopup (
-                '<h6><a href="mapas/Area_Asistencial_Anatomia_Patologica/">Área Asistencial Anatomía Patológica</a>'+
+                '<h6><a href="/mapas/Area_Asistencial_Anatomia_Patologica/">Área Asistencial Anatomía Patológica</a>'+
                 '<br/>'+
                 '<span class="small">Etiquetas: <i>Área, Fase 4, Sanidad</i></span></h6>'
+              );
+          
+          marker_array.push ( marker );
+
+
+            marker = L.marker(
+                [37.3751202, -5.9661505],
+                {
+                  title: 'ÁREA DE COMUNICACIÓN DEL GABINETE DE LA CONSEJERA',
+                  icon: icon_oil_drop
+                }
+              ).bindPopup (
+                '<h6><a href="/mapas/AREA_DE_COMUNICACION_DEL_GABINETE_DE_LA_CONSEJERA/">ÁREA DE COMUNICACIÓN DEL GABINETE DE LA CONSEJERA</a>'+
+                '<br/>'+
+                '<span class="small">Etiquetas: <i>Área, Plan de acción (4º Curso de Conocimiento Crítico) , Administración General</i></span></h6>'
               );
           
           marker_array.push ( marker );
@@ -182,7 +198,7 @@
                   icon: icon_oil_drop
                 }
               ).bindPopup (
-                '<h6><a href="mapas/Area_de_Demandas/">Área de Demandas</a>'+
+                '<h6><a href="/mapas/Area_de_Demandas/">Área de Demandas</a>'+
                 '<br/>'+
                 '<span class="small">Etiquetas: <i>Área, Fase 4 (del 1º Curso de Conocimiento Crítico), Empleo</i></span></h6>'
               );
@@ -197,7 +213,7 @@
                   icon: icon_oil_drop
                 }
               ).bindPopup (
-                '<h6><a href="mapas/Area_de_Intermediacion/">Área de Intermediación</a>'+
+                '<h6><a href="/mapas/Area_de_Intermediacion/">Área de Intermediación</a>'+
                 '<br/>'+
                 '<span class="small">Etiquetas: <i>Área, Fase 4 (del 1º Curso de Conocimiento Crítico), Empleo</i></span></h6>'
               );
@@ -212,7 +228,7 @@
                   icon: icon_oil_drop
                 }
               ).bindPopup (
-                '<h6><a href="mapas/Area_de_Ofertas/">Área de Ofertas</a>'+
+                '<h6><a href="/mapas/Area_de_Ofertas/">Área de Ofertas</a>'+
                 '<br/>'+
                 '<span class="small">Etiquetas: <i>Área, Fase 4 (del Manual 1.0), Empleo</i></span></h6>'
               );
@@ -227,7 +243,7 @@
                   icon: icon_oil_drop
                 }
               ).bindPopup (
-                '<h6><a href="mapas/Area_de_Orientacion/">Área de Orientación</a>'+
+                '<h6><a href="/mapas/Area_de_Orientacion/">Área de Orientación</a>'+
                 '<br/>'+
                 '<span class="small">Etiquetas: <i>Área, Fase 1 (del 1º Curso de Conocimiento Crítico), Empleo</i></span></h6>'
               );
@@ -242,7 +258,7 @@
                   icon: icon_oil_drop
                 }
               ).bindPopup (
-                '<h6><a href="mapas/Area_de_Tramitacion_de_Subvenciones_del_IAJ/">Área de Tramitación de Subvenciones del IAJ</a>'+
+                '<h6><a href="/mapas/Area_de_Tramitacion_de_Subvenciones_del_IAJ/">Área de Tramitación de Subvenciones del IAJ</a>'+
                 '<br/>'+
                 '<span class="small">Etiquetas: <i>Área, Plan de acción (3º Curso de Conocimiento Crítico), Administración General</i></span></h6>'
               );
@@ -257,7 +273,7 @@
                   icon: icon_oil_drop
                 }
               ).bindPopup (
-                '<h6><a href="mapas/BOJA__Mantenimiento_de_la_Certificacion_ISO-9001_y_Cartas_de_Servicio/">BOJA: Mantenimiento de la Certificación ISO-9001 y Cartas de Servicio</a>'+
+                '<h6><a href="/mapas/BOJA__Mantenimiento_de_la_Certificacion_ISO-9001_y_Cartas_de_Servicio/">BOJA: Mantenimiento de la Certificación ISO-9001 y Cartas de Servicio</a>'+
                 '<br/>'+
                 '<span class="small">Etiquetas: <i>Proceso, Plan de acción (Fase 6 del 2º Curso de Conocimiento Crítico), Administración General</i></span></h6>'
               );
@@ -272,9 +288,24 @@
                   icon: icon_oil_drop
                 }
               ).bindPopup (
-                '<h6><a href="mapas/Calificacion_Instalaciones_Turisticas/">Calificación Instalaciones Turísticas</a>'+
+                '<h6><a href="/mapas/Calificacion_Instalaciones_Turisticas/">Calificación Instalaciones Turísticas</a>'+
                 '<br/>'+
                 '<span class="small">Etiquetas: <i>Proceso, Fase 0 (del Manual 1.0), Administración General</i></span></h6>'
+              );
+          
+          marker_array.push ( marker );
+
+
+            marker = L.marker(
+                [37.3932446, -6.0026602],
+                {
+                  title: 'CERTIFICADOS DE PROFESIONALIDAD',
+                  icon: icon_oil_drop
+                }
+              ).bindPopup (
+                '<h6><a href="/mapas/CERTIFICADOS_DE_PROFESIONALIDAD/">CERTIFICADOS DE PROFESIONALIDAD</a>'+
+                '<br/>'+
+                '<span class="small">Etiquetas: <i>Proceso, Plan de acción (4º Curso de Conocimiento Crítico) , Empleo</i></span></h6>'
               );
           
           marker_array.push ( marker );
@@ -287,7 +318,7 @@
                   icon: icon_oil_drop
                 }
               ).bindPopup (
-                '<h6><a href="mapas/Configuracion_de_la_firma_digital_de_usuarios_as/">Configuración de la firma digital de usuarios/as</a>'+
+                '<h6><a href="/mapas/Configuracion_de_la_firma_digital_de_usuarios_as/">Configuración de la firma digital de usuarios/as</a>'+
                 '<br/>'+
                 '<span class="small">Etiquetas: <i>Proceso, Fase 1 (del Manual 1.0), Administración General</i></span></h6>'
               );
@@ -302,7 +333,7 @@
                   icon: icon_oil_drop
                 }
               ).bindPopup (
-                '<h6><a href="mapas/Configuracion_de_perfil_movil_de_usuario_a/">Configuración de perfil móvil de usuario/a</a>'+
+                '<h6><a href="/mapas/Configuracion_de_perfil_movil_de_usuario_a/">Configuración de perfil móvil de usuario/a</a>'+
                 '<br/>'+
                 '<span class="small">Etiquetas: <i>Proceso, Fase 1 (del Manual 1.0), Administración General</i></span></h6>'
               );
@@ -317,7 +348,7 @@
                   icon: icon_oil_drop
                 }
               ).bindPopup (
-                '<h6><a href="mapas/Configuracion_inicial_de_puesto_de_trabajo_de_usuario_a/">Configuración inicial de puesto de trabajo de usuario/a</a>'+
+                '<h6><a href="/mapas/Configuracion_inicial_de_puesto_de_trabajo_de_usuario_a/">Configuración inicial de puesto de trabajo de usuario/a</a>'+
                 '<br/>'+
                 '<span class="small">Etiquetas: <i>Proceso, Fase 1 (del Manual 1.0), Administración General</i></span></h6>'
               );
@@ -332,7 +363,7 @@
                   icon: icon_oil_drop
                 }
               ).bindPopup (
-                '<h6><a href="mapas/Crear_un_Repositorio_Documental_Normativo/">Crear un Repositorio Documental Normativo</a>'+
+                '<h6><a href="/mapas/Crear_un_Repositorio_Documental_Normativo/">Crear un Repositorio Documental Normativo</a>'+
                 '<br/>'+
                 '<span class="small">Etiquetas: <i>Organización, Fase 4, Administración General</i></span></h6>'
               );
@@ -347,7 +378,7 @@
                   icon: icon_oil_drop
                 }
               ).bindPopup (
-                '<h6><a href="mapas/Director_de_proyecto_del_Servicio_de_desarrollo_y_publicacion_de_tramites_y_procedimientos_administrativos_en_la_Ventanilla_Electronica_Centralizada_de_la_Junta_de_Andalucia/">Director de proyecto del Servicio de desarrollo y publicación de trámites y procedimientos administrativos en la Ventanilla Electrónica Centralizada de la Junta de Andalucía</a>'+
+                '<h6><a href="/mapas/Director_de_proyecto_del_Servicio_de_desarrollo_y_publicacion_de_tramites_y_procedimientos_administrativos_en_la_Ventanilla_Electronica_Centralizada_de_la_Junta_de_Andalucia/">Director de proyecto del Servicio de desarrollo y publicación de trámites y procedimientos administrativos en la Ventanilla Electrónica Centralizada de la Junta de Andalucía</a>'+
                 '<br/>'+
                 '<span class="small">Etiquetas: <i>Cargo, Plan de acción (3º Curso de Conocimiento Crítico), Administración General</i></span></h6>'
               );
@@ -362,7 +393,7 @@
                   icon: icon_oil_drop
                 }
               ).bindPopup (
-                '<h6><a href="mapas/Elaboracion_de_las_estadisticas_anuales_de_controles_realizados_en_las_ayudas_FEADER_a_Industrias_Agroalimentarias/">Elaboración de las estadísticas anuales de controles realizados en las ayudas FEADER a Industrias Agroalimentarias</a>'+
+                '<h6><a href="/mapas/Elaboracion_de_las_estadisticas_anuales_de_controles_realizados_en_las_ayudas_FEADER_a_Industrias_Agroalimentarias/">Elaboración de las estadísticas anuales de controles realizados en las ayudas FEADER a Industrias Agroalimentarias</a>'+
                 '<br/>'+
                 '<span class="small">Etiquetas: <i>Proceso, Plan de acción (Fase 6 del 2º Curso de Conocimiento Crítico), Administración General</i></span></h6>'
               );
@@ -377,7 +408,7 @@
                   icon: icon_oil_drop
                 }
               ).bindPopup (
-                '<h6><a href="mapas/Elevar_Informe_a_la_S__G__Industria_y_Minas/">Elevar Informe a la S. G. Industria y Minas</a>'+
+                '<h6><a href="/mapas/Elevar_Informe_a_la_S__G__Industria_y_Minas/">Elevar Informe a la S. G. Industria y Minas</a>'+
                 '<br/>'+
                 '<span class="small">Etiquetas: <i>Proceso, Fase 4, Administración General</i></span></h6>'
               );
@@ -392,7 +423,7 @@
                   icon: icon_oil_drop
                 }
               ).bindPopup (
-                '<h6><a href="mapas/Equilibrio_demografico_sostenible/">Equilibrio demográfico sostenible</a>'+
+                '<h6><a href="/mapas/Equilibrio_demografico_sostenible/">Equilibrio demográfico sostenible</a>'+
                 '<br/>'+
                 '<span class="small">Etiquetas: <i>Estrategia, Plan de acción (Fase 6 del 2º Curso de Conocimiento Crítico), Administración General</i></span></h6>'
               );
@@ -407,9 +438,39 @@
                   icon: icon_oil_drop
                 }
               ).bindPopup (
-                '<h6><a href="mapas/Evaluacion_de_cursos_de_formacion/">Evaluación de cursos de formación</a>'+
+                '<h6><a href="/mapas/Evaluacion_de_cursos_de_formacion/">Evaluación de cursos de formación</a>'+
                 '<br/>'+
                 '<span class="small">Etiquetas: <i>Área, Fase 4, Administración General</i></span></h6>'
+              );
+          
+          marker_array.push ( marker );
+
+
+            marker = L.marker(
+                [37.3926773, -6.0145111],
+                {
+                  title: 'Expedientes de jubilación por incapacidad permanente.',
+                  icon: icon_oil_drop
+                }
+              ).bindPopup (
+                '<h6><a href="/mapas/Expedientes_de_jubilacion_por_incapacidad_permanente_/">Expedientes de jubilación por incapacidad permanente.</a>'+
+                '<br/>'+
+                '<span class="small">Etiquetas: <i>Proceso, Plan de acción (4º Curso de Conocimiento Crítico) , Educación</i></span></h6>'
+              );
+          
+          marker_array.push ( marker );
+
+
+            marker = L.marker(
+                [37.7851159, -3.7842041],
+                {
+                  title: 'Formación sobre Seguridad y Salud',
+                  icon: icon_oil_drop
+                }
+              ).bindPopup (
+                '<h6><a href="/mapas/Formacion_sobre_Seguridad_y_Salud/">Formación sobre Seguridad y Salud</a>'+
+                '<br/>'+
+                '<span class="small">Etiquetas: <i>Proceso, Plan de acción (4º Curso de Conocimiento Crítico) , Administración General</i></span></h6>'
               );
           
           marker_array.push ( marker );
@@ -422,9 +483,24 @@
                   icon: icon_oil_drop
                 }
               ).bindPopup (
-                '<h6><a href="mapas/Gestionar_el_Deposito_legal_de_las_publicaciones_periodicas_electronicas/">Gestionar el Depósito legal de las publicaciones periódicas electrónicas</a>'+
+                '<h6><a href="/mapas/Gestionar_el_Deposito_legal_de_las_publicaciones_periodicas_electronicas/">Gestionar el Depósito legal de las publicaciones periódicas electrónicas</a>'+
                 '<br/>'+
                 '<span class="small">Etiquetas: <i>Organización, Plan de acción (3º Curso de Conocimiento Crítico), Administración al servicio de la Justicia</i></span></h6>'
+              );
+          
+          marker_array.push ( marker );
+
+
+            marker = L.marker(
+                [36.8389795, -2.4577344],
+                {
+                  title: 'Gestión del Área o Departamento de Formación. DS o AGSNA',
+                  icon: icon_oil_drop
+                }
+              ).bindPopup (
+                '<h6><a href="/mapas/Gestion_del_Area_o_Departamento_de_Formacion__DS_o_AGSNA/">Gestión del Área o Departamento de Formación. DS o AGSNA</a>'+
+                '<br/>'+
+                '<span class="small">Etiquetas: <i>Proceso, Plan de acción (4º Curso de Conocimiento Crítico) , Administración General</i></span></h6>'
               );
           
           marker_array.push ( marker );
@@ -437,7 +513,7 @@
                   icon: icon_oil_drop
                 }
               ).bindPopup (
-                '<h6><a href="mapas/Gestion_de_las_Redes_Sociales_del_Archivo_General_de_Andalucia/">Gestión de las Redes Sociales del Archivo General de Andalucía</a>'+
+                '<h6><a href="/mapas/Gestion_de_las_Redes_Sociales_del_Archivo_General_de_Andalucia/">Gestión de las Redes Sociales del Archivo General de Andalucía</a>'+
                 '<br/>'+
                 '<span class="small">Etiquetas: <i>Área, Plan de acción (3º Curso de Conocimiento Crítico), Administración General</i></span></h6>'
               );
@@ -452,9 +528,39 @@
                   icon: icon_oil_drop
                 }
               ).bindPopup (
-                '<h6><a href="mapas/Gestion_de_propuestas_de_proyectos_hoteleros_y_apartamentos_turisticos/">Gestión de propuestas de proyectos hoteleros y apartamentos turísticos</a>'+
+                '<h6><a href="/mapas/Gestion_de_propuestas_de_proyectos_hoteleros_y_apartamentos_turisticos/">Gestión de propuestas de proyectos hoteleros y apartamentos turísticos</a>'+
                 '<br/>'+
                 '<span class="small">Etiquetas: <i>Proceso, Fase 0 (del Manual 1.0), Administración General</i></span></h6>'
+              );
+          
+          marker_array.push ( marker );
+
+
+            marker = L.marker(
+                [36.5929447, -6.2427789],
+                {
+                  title: 'Gestión de Secretaría del Centro Educativo',
+                  icon: icon_oil_drop
+                }
+              ).bindPopup (
+                '<h6><a href="/mapas/Gestion_de_Secretaria_del_Centro_Educativo/">Gestión de Secretaría del Centro Educativo</a>'+
+                '<br/>'+
+                '<span class="small">Etiquetas: <i>Proceso, Plan de acción (4º Curso de Conocimiento Crítico) , Educación</i></span></h6>'
+              );
+          
+          marker_array.push ( marker );
+
+
+            marker = L.marker(
+                [37.8822766, -4.7973946],
+                {
+                  title: 'Gestión económica del procedimiento administrativo sancionado',
+                  icon: icon_oil_drop
+                }
+              ).bindPopup (
+                '<h6><a href="/mapas/Gestion_economica_del_procedimiento_administrativo_sancionado/">Gestión económica del procedimiento administrativo sancionado</a>'+
+                '<br/>'+
+                '<span class="small">Etiquetas: <i>Organización, Plan de acción (4º Curso de Conocimiento Crítico) , Administración General</i></span></h6>'
               );
           
           marker_array.push ( marker );
@@ -467,7 +573,7 @@
                   icon: icon_oil_drop
                 }
               ).bindPopup (
-                '<h6><a href="mapas/Gestion_forestal_sostenible/">Gestión forestal sostenible</a>'+
+                '<h6><a href="/mapas/Gestion_forestal_sostenible/">Gestión forestal sostenible</a>'+
                 '<br/>'+
                 '<span class="small">Etiquetas: <i>Organización, Fase 4, Administración General</i></span></h6>'
               );
@@ -482,9 +588,24 @@
                   icon: icon_oil_drop
                 }
               ).bindPopup (
-                '<h6><a href="mapas/Gestion_Patrimonio_Inmobiliario_Organos_Judiciales/">Gestión Patrimonio Inmobiliario Órganos Judiciales</a>'+
+                '<h6><a href="/mapas/Gestion_Patrimonio_Inmobiliario_Organos_Judiciales/">Gestión Patrimonio Inmobiliario Órganos Judiciales</a>'+
                 '<br/>'+
                 '<span class="small">Etiquetas: <i>Área, Fase 4 (del 1º Curso de Conocimiento Crítico), Administración General</i></span></h6>'
+              );
+          
+          marker_array.push ( marker );
+
+
+            marker = L.marker(
+                [36.5349671, -6.2992204],
+                {
+                  title: 'Gestión y control de las incapacidades temporales (IT) de los docentes funcionarios de carrera',
+                  icon: icon_oil_drop
+                }
+              ).bindPopup (
+                '<h6><a href="/mapas/Gestion_y_control_de_las_incapacidades_temporales_(IT)_de_los_docentes_funcionarios_de_carrera/">Gestión y control de las incapacidades temporales (IT) de los docentes funcionarios de carrera</a>'+
+                '<br/>'+
+                '<span class="small">Etiquetas: <i>Organización, Plan de acción (4º Curso de Conocimiento Crítico) , Administración General</i></span></h6>'
               );
           
           marker_array.push ( marker );
@@ -497,7 +618,7 @@
                   icon: icon_oil_drop
                 }
               ).bindPopup (
-                '<h6><a href="mapas/Implantar_un_sistema_de_teletrabajo_en_el_servicio_de_Turismo/">Implantar un sistema de teletrabajo en el servicio de Turismo</a>'+
+                '<h6><a href="/mapas/Implantar_un_sistema_de_teletrabajo_en_el_servicio_de_Turismo/">Implantar un sistema de teletrabajo en el servicio de Turismo</a>'+
                 '<br/>'+
                 '<span class="small">Etiquetas: <i>Proceso, Fase 1 (del Manual 1.0), Administración General</i></span></h6>'
               );
@@ -512,7 +633,7 @@
                   icon: icon_oil_drop
                 }
               ).bindPopup (
-                '<h6><a href="mapas/Instalacion_de_una_nueva_cola_de_impresion/">Instalación de una nueva cola de impresión</a>'+
+                '<h6><a href="/mapas/Instalacion_de_una_nueva_cola_de_impresion/">Instalación de una nueva cola de impresión</a>'+
                 '<br/>'+
                 '<span class="small">Etiquetas: <i>Proceso, Fase 2 (del Manual 1.0), Administración General</i></span></h6>'
               );
@@ -527,7 +648,7 @@
                   icon: icon_oil_drop
                 }
               ).bindPopup (
-                '<h6><a href="mapas/Justificacion_de_subvenciones/">Justificación de subvenciones</a>'+
+                '<h6><a href="/mapas/Justificacion_de_subvenciones/">Justificación de subvenciones</a>'+
                 '<br/>'+
                 '<span class="small">Etiquetas: <i>Proceso, Fase 4, Administración General</i></span></h6>'
               );
@@ -542,7 +663,7 @@
                   icon: icon_oil_drop
                 }
               ).bindPopup (
-                '<h6><a href="mapas/Liquidacion_de_la_ayuda_a_domicilio/">Liquidación de la ayuda a domicilio</a>'+
+                '<h6><a href="/mapas/Liquidacion_de_la_ayuda_a_domicilio/">Liquidación de la ayuda a domicilio</a>'+
                 '<br/>'+
                 '<span class="small">Etiquetas: <i>Proceso, Fase 4, Administración General</i></span></h6>'
               );
@@ -557,7 +678,7 @@
                   icon: icon_oil_drop
                 }
               ).bindPopup (
-                '<h6><a href="mapas/Mantenimiento_del_inventario_del_equipamiento_informatico_y_telefonico/">Mantenimiento del inventario del equipamiento informático y telefónico</a>'+
+                '<h6><a href="/mapas/Mantenimiento_del_inventario_del_equipamiento_informatico_y_telefonico/">Mantenimiento del inventario del equipamiento informático y telefónico</a>'+
                 '<br/>'+
                 '<span class="small">Etiquetas: <i>Proceso, Fase 1 (del Manual 1.0), Administración General</i></span></h6>'
               );
@@ -572,7 +693,7 @@
                   icon: icon_oil_drop
                 }
               ).bindPopup (
-                '<h6><a href="mapas/Mantenimiento_de_usuarios_de_la_aplicacion_ECO/">Mantenimiento de usuarios de la aplicación ECO</a>'+
+                '<h6><a href="/mapas/Mantenimiento_de_usuarios_de_la_aplicacion_ECO/">Mantenimiento de usuarios de la aplicación ECO</a>'+
                 '<br/>'+
                 '<span class="small">Etiquetas: <i>Proceso, Fase 1 (del Manual 1.0), Administración General</i></span></h6>'
               );
@@ -587,9 +708,24 @@
                   icon: icon_oil_drop
                 }
               ).bindPopup (
-                '<h6><a href="mapas/Maquetacion_de_revista_EnRed@2_0/">Maquetación de revista EnRed@2.0</a>'+
+                '<h6><a href="/mapas/Maquetacion_de_revista_EnRed@2_0/">Maquetación de revista EnRed@2.0</a>'+
                 '<br/>'+
                 '<span class="small">Etiquetas: <i>Proceso, Fase 4, Administración General</i></span></h6>'
+              );
+          
+          marker_array.push ( marker );
+
+
+            marker = L.marker(
+                [36.7156961, 4378873,17],
+                {
+                  title: 'Matriculación y titulación del alumnado de ESO',
+                  icon: icon_oil_drop
+                }
+              ).bindPopup (
+                '<h6><a href="/mapas/Matriculacion_y_titulacion_del_alumnado_de_ESO/">Matriculación y titulación del alumnado de ESO</a>'+
+                '<br/>'+
+                '<span class="small">Etiquetas: <i>Proceso, Plan de acción (4º Curso de Conocimiento Crítico) , Educación</i></span></h6>'
               );
           
           marker_array.push ( marker );
@@ -602,9 +738,54 @@
                   icon: icon_oil_drop
                 }
               ).bindPopup (
-                '<h6><a href="mapas/Mecanismos_de_busquedas_y_gestion_de_candidatos/">Mecanismos de búsquedas y gestión de candidatos</a>'+
+                '<h6><a href="/mapas/Mecanismos_de_busquedas_y_gestion_de_candidatos/">Mecanismos de búsquedas y gestión de candidatos</a>'+
                 '<br/>'+
                 '<span class="small">Etiquetas: <i>Proceso, Fase 0 (del Manual 1.0), Empleo</i></span></h6>'
+              );
+          
+          marker_array.push ( marker );
+
+
+            marker = L.marker(
+                [37.3785959, -5.9766078],
+                {
+                  title: 'Oficina de Asistencia en materia de Registro de la Consejería',
+                  icon: icon_oil_drop
+                }
+              ).bindPopup (
+                '<h6><a href="/mapas/Oficina_de_Asistencia_en_materia_de_Registro_de_la_Consejeria/">Oficina de Asistencia en materia de Registro de la Consejería</a>'+
+                '<br/>'+
+                '<span class="small">Etiquetas: <i>Proceso, Plan de acción (4º Curso de Conocimiento Crítico) , Administración General</i></span></h6>'
+              );
+          
+          marker_array.push ( marker );
+
+
+            marker = L.marker(
+                [37.9127271, -3.0083485],
+                {
+                  title: 'Optimización en la expedición de certificados académicos y para profesores',
+                  icon: icon_oil_drop
+                }
+              ).bindPopup (
+                '<h6><a href="/mapas/Optimizacion_en_la_expedicion_de_certificados_academicos_y_para_profesores/">Optimización en la expedición de certificados académicos y para profesores</a>'+
+                '<br/>'+
+                '<span class="small">Etiquetas: <i>Organización, Plan de acción (4º Curso de Conocimiento Crítico) , Educación</i></span></h6>'
+              );
+          
+          marker_array.push ( marker );
+
+
+            marker = L.marker(
+                [37.3936629, -6.0203528],
+                {
+                  title: 'Personal de la Junta de Andalucía encargados de la gestión de subvenciones, tanto Senior como Junior.',
+                  icon: icon_oil_drop
+                }
+              ).bindPopup (
+                '<h6><a href="/mapas/Personal_de_la_Junta_de_Andalucia_encargados_de_la_gestion_de_subvenciones__tanto_Senior_como_Junior__/">Personal de la Junta de Andalucía encargados de la gestión de subvenciones, tanto Senior como Junior.</a>'+
+                '<br/>'+
+                '<span class="small">Etiquetas: <i>Organización, Plan de acción (4º Curso de Conocimiento Crítico) , Administración General</i></span></h6>'
               );
           
           marker_array.push ( marker );
@@ -617,7 +798,7 @@
                   icon: icon_oil_drop
                 }
               ).bindPopup (
-                '<h6><a href="mapas/Planificacion_de_los_programas_presupuestarios/">Planificación de los programas presupuestarios</a>'+
+                '<h6><a href="/mapas/Planificacion_de_los_programas_presupuestarios/">Planificación de los programas presupuestarios</a>'+
                 '<br/>'+
                 '<span class="small">Etiquetas: <i>Proceso, Plan de acción (Fase 6 del 2º Curso de Conocimiento Crítico), Administración General</i></span></h6>'
               );
@@ -632,7 +813,7 @@
                   icon: icon_oil_drop
                 }
               ).bindPopup (
-                '<h6><a href="mapas/Planificacion_y_puesta_en_marcha_de_los_talleres_de_formacion_de_direccion/">Planificación y puesta en marcha de los talleres de formación de dirección</a>'+
+                '<h6><a href="/mapas/Planificacion_y_puesta_en_marcha_de_los_talleres_de_formacion_de_direccion/">Planificación y puesta en marcha de los talleres de formación de dirección</a>'+
                 '<br/>'+
                 '<span class="small">Etiquetas: <i>Proceso, Fase 4, Administración General</i></span></h6>'
               );
@@ -647,7 +828,7 @@
                   icon: icon_oil_drop
                 }
               ).bindPopup (
-                '<h6><a href="mapas/Plan_de_Actuacion_de_Zona__Planes_de_Centro_de_los_Centros_afectados_/">Plan de Actuación de Zona. Planes de Centro de los Centros afectados.</a>'+
+                '<h6><a href="/mapas/Plan_de_Actuacion_de_Zona__Planes_de_Centro_de_los_Centros_afectados_/">Plan de Actuación de Zona. Planes de Centro de los Centros afectados.</a>'+
                 '<br/>'+
                 '<span class="small">Etiquetas: <i>Organización, Fase 4, Administración General</i></span></h6>'
               );
@@ -662,7 +843,7 @@
                   icon: icon_oil_drop
                 }
               ).bindPopup (
-                '<h6><a href="mapas/Plataformado_y_configuracion_inicial_de_un_ordenador/">Plataformado y configuración inicial de un ordenador</a>'+
+                '<h6><a href="/mapas/Plataformado_y_configuracion_inicial_de_un_ordenador/">Plataformado y configuración inicial de un ordenador</a>'+
                 '<br/>'+
                 '<span class="small">Etiquetas: <i>Proceso, Fase 1 (del Manual 1.0), Administración General</i></span></h6>'
               );
@@ -677,7 +858,7 @@
                   icon: icon_oil_drop
                 }
               ).bindPopup (
-                '<h6><a href="mapas/Preparacion_de_una_videoconferencia_mediante_red_corporativa/">Preparación de una videoconferencia mediante red corporativa</a>'+
+                '<h6><a href="/mapas/Preparacion_de_una_videoconferencia_mediante_red_corporativa/">Preparación de una videoconferencia mediante red corporativa</a>'+
                 '<br/>'+
                 '<span class="small">Etiquetas: <i>Proceso, Fase 2 (del Manual 1.0), Administración General</i></span></h6>'
               );
@@ -692,9 +873,39 @@
                   icon: icon_oil_drop
                 }
               ).bindPopup (
-                '<h6><a href="mapas/Procedimientos_operativos/">Procedimientos operativos</a>'+
+                '<h6><a href="/mapas/Procedimientos_operativos/">Procedimientos operativos</a>'+
                 '<br/>'+
                 '<span class="small">Etiquetas: <i>Proceso, Fase 4, Administración General</i></span></h6>'
+              );
+          
+          marker_array.push ( marker );
+
+
+            marker = L.marker(
+                [37.3751202, -5.9661505],
+                {
+                  title: 'Procedimiento de Adaptación de puesto de trabajo por especial sensibilidad o embarazo.',
+                  icon: icon_oil_drop
+                }
+              ).bindPopup (
+                '<h6><a href="/mapas/Procedimiento_de_Adaptacion_de_puesto_de_trabajo_por_especial_sensibilidad_o_embarazo_/">Procedimiento de Adaptación de puesto de trabajo por especial sensibilidad o embarazo.</a>'+
+                '<br/>'+
+                '<span class="small">Etiquetas: <i>Proceso, Plan de acción (4º Curso de Conocimiento Crítico) , Educación</i></span></h6>'
+              );
+          
+          marker_array.push ( marker );
+
+
+            marker = L.marker(
+                [37.3551478, -5.9924132],
+                {
+                  title: 'Procedimiento sancionador y restauraciones en materia de medio ambiente.',
+                  icon: icon_oil_drop
+                }
+              ).bindPopup (
+                '<h6><a href="/mapas/Procedimiento_sancionador_y_restauraciones_en_materia_de_medio_ambiente_/">Procedimiento sancionador y restauraciones en materia de medio ambiente.</a>'+
+                '<br/>'+
+                '<span class="small">Etiquetas: <i>Proceso, Plan de acción (4º Curso de Conocimiento Crítico) , Administración General</i></span></h6>'
               );
           
           marker_array.push ( marker );
@@ -707,7 +918,7 @@
                   icon: icon_oil_drop
                 }
               ).bindPopup (
-                '<h6><a href="mapas/Procesos_de_Facturacion_de_contratacion_menor_/">Procesos de Facturación de contratación menor</a>'+
+                '<h6><a href="/mapas/Procesos_de_Facturacion_de_contratacion_menor_/">Procesos de Facturación de contratación menor</a>'+
                 '<br/>'+
                 '<span class="small">Etiquetas: <i>Proceso, Fase 4, Administración General</i></span></h6>'
               );
@@ -722,9 +933,54 @@
                   icon: icon_oil_drop
                 }
               ).bindPopup (
-                '<h6><a href="mapas/Proceso_de_ejecucion_en_procesos_de_lanzamientos_y_desahucios__/">Proceso de ejecución en procesos de lanzamientos y desahucios.</a>'+
+                '<h6><a href="/mapas/Proceso_de_ejecucion_en_procesos_de_lanzamientos_y_desahucios__/">Proceso de ejecución en procesos de lanzamientos y desahucios.</a>'+
                 '<br/>'+
                 '<span class="small">Etiquetas: <i>Proceso, Plan de acción (3º Curso de Conocimiento Crítico), Administración al servicio de la Justicia</i></span></h6>'
+              );
+          
+          marker_array.push ( marker );
+
+
+            marker = L.marker(
+                [36.1939787, -5.5953373],
+                {
+                  title: 'PROCESO DE GESTIÓN OFERTAS DE EMPLEO',
+                  icon: icon_oil_drop
+                }
+              ).bindPopup (
+                '<h6><a href="/mapas/PROCESO_DE_GESTION_OFERTAS_DE_EMPLEO/">PROCESO DE GESTIÓN OFERTAS DE EMPLEO</a>'+
+                '<br/>'+
+                '<span class="small">Etiquetas: <i>Proceso, Plan de acción (4º Curso de Conocimiento Crítico) , Empleo</i></span></h6>'
+              );
+          
+          marker_array.push ( marker );
+
+
+            marker = L.marker(
+                [37.7954024, -3.7799299],
+                {
+                  title: 'Proceso de implantación de un Sistema de Megafonía IP en un centro de la Junta de Andalucía.',
+                  icon: icon_oil_drop
+                }
+              ).bindPopup (
+                '<h6><a href="/mapas/Proceso_de_implantacion_de_un_Sistema_de_Megafonia_IP_en_un_centro_de_la_Junta_de_Andalucia_/">Proceso de implantación de un Sistema de Megafonía IP en un centro de la Junta de Andalucía.</a>'+
+                '<br/>'+
+                '<span class="small">Etiquetas: <i>Proceso, Plan de acción (4º Curso de Conocimiento Crítico) , Administración General</i></span></h6>'
+              );
+          
+          marker_array.push ( marker );
+
+
+            marker = L.marker(
+                [37.8776398, -4.7906925],
+                {
+                  title: 'Proceso de instrucción de procedimientos sancionadores en materia medioambiental',
+                  icon: icon_oil_drop
+                }
+              ).bindPopup (
+                '<h6><a href="/mapas/Proceso_de_instruccion_de_procedimientos_sancionadores_en_materia_medioambiental/">Proceso de instrucción de procedimientos sancionadores en materia medioambiental</a>'+
+                '<br/>'+
+                '<span class="small">Etiquetas: <i>Proceso, Plan de acción (4º Curso de Conocimiento Crítico) , Medio Ambiente</i></span></h6>'
               );
           
           marker_array.push ( marker );
@@ -737,7 +993,7 @@
                   icon: icon_oil_drop
                 }
               ).bindPopup (
-                '<h6><a href="mapas/Proceso_de_plataformado_y_configuracion_inicial_de_equipos_para_puesto_digital_unico/">Proceso de plataformado y configuración inicial de equipos para puesto digital único</a>'+
+                '<h6><a href="/mapas/Proceso_de_plataformado_y_configuracion_inicial_de_equipos_para_puesto_digital_unico/">Proceso de plataformado y configuración inicial de equipos para puesto digital único</a>'+
                 '<br/>'+
                 '<span class="small">Etiquetas: <i>Proceso, Plan de acción (3º Curso de Conocimiento Crítico), Administración General</i></span></h6>'
               );
@@ -752,7 +1008,7 @@
                   icon: icon_oil_drop
                 }
               ).bindPopup (
-                '<h6><a href="mapas/Protocolizacion_de_los_reconocimientos_medicos/">Protocolización de los reconocimientos médicos</a>'+
+                '<h6><a href="/mapas/Protocolizacion_de_los_reconocimientos_medicos/">Protocolización de los reconocimientos médicos</a>'+
                 '<br/>'+
                 '<span class="small">Etiquetas: <i>Área, Plan de acción (Fase 6 del 2º Curso de Conocimiento Crítico), Sanidad</i></span></h6>'
               );
@@ -767,7 +1023,7 @@
                   icon: icon_oil_drop
                 }
               ).bindPopup (
-                '<h6><a href="mapas/Publicacion_de_noticias_y_avisos_en_la_Intranet/">Publicación de noticias y avisos en la Intranet</a>'+
+                '<h6><a href="/mapas/Publicacion_de_noticias_y_avisos_en_la_Intranet/">Publicación de noticias y avisos en la Intranet</a>'+
                 '<br/>'+
                 '<span class="small">Etiquetas: <i>Proceso, Fase 1 (del Manual 1.0), Administración General</i></span></h6>'
               );
@@ -782,7 +1038,7 @@
                   icon: icon_oil_drop
                 }
               ).bindPopup (
-                '<h6><a href="mapas/Puesto_de_Tecnico_de_Administracion__Servicio_de_Gestion_de_Inversiones_y_Contrataciones__Servicio_Andaluz_de_Salud/">Puesto de Técnico de Administración, Servicio de Gestión de Inversiones y Contrataciones, Servicio Andaluz de Salud</a>'+
+                '<h6><a href="/mapas/Puesto_de_Tecnico_de_Administracion__Servicio_de_Gestion_de_Inversiones_y_Contrataciones__Servicio_Andaluz_de_Salud/">Puesto de Técnico de Administración, Servicio de Gestión de Inversiones y Contrataciones, Servicio Andaluz de Salud</a>'+
                 '<br/>'+
                 '<span class="small">Etiquetas: <i>Cargo, Plan de acción (3º Curso de Conocimiento Crítico), Sanidad</i></span></h6>'
               );
@@ -797,7 +1053,7 @@
                   icon: icon_oil_drop
                 }
               ).bindPopup (
-                '<h6><a href="mapas/Recepcion_por_parte_del_contribuyente_de_las_notificaciones_y_requerimientos/">Recepción por parte del contribuyente de las notificaciones y requerimientos</a>'+
+                '<h6><a href="/mapas/Recepcion_por_parte_del_contribuyente_de_las_notificaciones_y_requerimientos/">Recepción por parte del contribuyente de las notificaciones y requerimientos</a>'+
                 '<br/>'+
                 '<span class="small">Etiquetas: <i>Proceso, Fase 4, Administración General</i></span></h6>'
               );
@@ -812,7 +1068,7 @@
                   icon: icon_oil_drop
                 }
               ).bindPopup (
-                '<h6><a href="mapas/Reclamaciones_y_sanciones/">Reclamaciones y sanciones</a>'+
+                '<h6><a href="/mapas/Reclamaciones_y_sanciones/">Reclamaciones y sanciones</a>'+
                 '<br/>'+
                 '<span class="small">Etiquetas: <i>Proceso, Fase 4, Administración General</i></span></h6>'
               );
@@ -827,7 +1083,7 @@
                   icon: icon_oil_drop
                 }
               ).bindPopup (
-                '<h6><a href="mapas/Recuperacion_de_archivos_borrados_de_una_unidad_de_red/">Recuperación de archivos borrados de una unidad de red</a>'+
+                '<h6><a href="/mapas/Recuperacion_de_archivos_borrados_de_una_unidad_de_red/">Recuperación de archivos borrados de una unidad de red</a>'+
                 '<br/>'+
                 '<span class="small">Etiquetas: <i>Proceso, Fase 4 (del Manual 1.0), Administración General</i></span></h6>'
               );
@@ -842,7 +1098,7 @@
                   icon: icon_oil_drop
                 }
               ).bindPopup (
-                '<h6><a href="mapas/Registro_de_ofertas/">Registro de ofertas</a>'+
+                '<h6><a href="/mapas/Registro_de_ofertas/">Registro de ofertas</a>'+
                 '<br/>'+
                 '<span class="small">Etiquetas: <i>Proceso, Fase 0 (del Manual 1.0), Empleo</i></span></h6>'
               );
@@ -857,9 +1113,54 @@
                   icon: icon_oil_drop
                 }
               ).bindPopup (
-                '<h6><a href="mapas/Resolucion_de_subvenciones_en_edificios/">Resolución de subvenciones en edificios</a>'+
+                '<h6><a href="/mapas/Resolucion_de_subvenciones_en_edificios/">Resolución de subvenciones en edificios</a>'+
                 '<br/>'+
                 '<span class="small">Etiquetas: <i>Proceso, Fase 4, Administración General</i></span></h6>'
+              );
+          
+          marker_array.push ( marker );
+
+
+            marker = L.marker(
+                [37.8827684, -4.7892296],
+                {
+                  title: 'Sección de Gestión Económica y Contratación.',
+                  icon: icon_oil_drop
+                }
+              ).bindPopup (
+                '<h6><a href="/mapas/Seccion_de_Gestion_Economica_y_Contratacion_/">Sección de Gestión Económica y Contratación.</a>'+
+                '<br/>'+
+                '<span class="small">Etiquetas: <i>Organización, Plan de acción (4º Curso de Conocimiento Crítico) , Administración General</i></span></h6>'
+              );
+          
+          marker_array.push ( marker );
+
+
+            marker = L.marker(
+                [37.3830588, -6.0114317],
+                {
+                  title: 'Sección de interinos del Servicio de Planificación y ordenación de personal funcionario',
+                  icon: icon_oil_drop
+                }
+              ).bindPopup (
+                '<h6><a href="/mapas/Seccion_de_interinos_del_Servicio_de_Planificacion_y_ordenacion_de_personal_funcionario/">Sección de interinos del Servicio de Planificación y ordenación de personal funcionario</a>'+
+                '<br/>'+
+                '<span class="small">Etiquetas: <i>Proceso, Plan de acción (4º Curso de Conocimiento Crítico) , Administración General</i></span></h6>'
+              );
+          
+          marker_array.push ( marker );
+
+
+            marker = L.marker(
+                [36.7156961, -4.4378873],
+                {
+                  title: 'Servicio de Escolarización en FP',
+                  icon: icon_oil_drop
+                }
+              ).bindPopup (
+                '<h6><a href="/mapas/Servicio_de_Escolarizacion_en_FP/">Servicio de Escolarización en FP</a>'+
+                '<br/>'+
+                '<span class="small">Etiquetas: <i>Proceso, Plan de acción (4º Curso de Conocimiento Crítico) , Empleo</i></span></h6>'
               );
           
           marker_array.push ( marker );
@@ -872,7 +1173,7 @@
                   icon: icon_oil_drop
                 }
               ).bindPopup (
-                '<h6><a href="mapas/Tecnico_de_Prevencion_de_Riesgos_Laborales/">Técnico de Prevención de Riesgos Laborales</a>'+
+                '<h6><a href="/mapas/Tecnico_de_Prevencion_de_Riesgos_Laborales/">Técnico de Prevención de Riesgos Laborales</a>'+
                 '<br/>'+
                 '<span class="small">Etiquetas: <i>Puesto, Fase 4 (del 1º Curso de Conocimiento Crítico), Administración General</i></span></h6>'
               );
@@ -887,7 +1188,7 @@
                   icon: icon_oil_drop
                 }
               ).bindPopup (
-                '<h6><a href="mapas/Tramitacion_de_la_justificacion_de_la_subvencion_del_Instituto_Andaluz_de_la_Mujer_del_ATENSOC/">Tramitación de la justificación de la subvención del Instituto Andaluz de la Mujer del ATENSOC</a>'+
+                '<h6><a href="/mapas/Tramitacion_de_la_justificacion_de_la_subvencion_del_Instituto_Andaluz_de_la_Mujer_del_ATENSOC/">Tramitación de la justificación de la subvención del Instituto Andaluz de la Mujer del ATENSOC</a>'+
                 '<br/>'+
                 '<span class="small">Etiquetas: <i>Proceso, Plan de acción (3º Curso de Conocimiento Crítico), Administración General</i></span></h6>'
               );
@@ -902,7 +1203,7 @@
                   icon: icon_oil_drop
                 }
               ).bindPopup (
-                '<h6><a href="mapas/Tramitar_y_gestionar_el_Plan_de_Formacion_Interna_Anual_del_Servicio_Andaluz_de_Empleo/">Tramitar y gestionar el Plan de Formación Interna Anual del Servicio Andaluz de Empleo</a>'+
+                '<h6><a href="/mapas/Tramitar_y_gestionar_el_Plan_de_Formacion_Interna_Anual_del_Servicio_Andaluz_de_Empleo/">Tramitar y gestionar el Plan de Formación Interna Anual del Servicio Andaluz de Empleo</a>'+
                 '<br/>'+
                 '<span class="small">Etiquetas: <i>Área, Plan de acción (3º Curso de Conocimiento Crítico), Empleo</i></span></h6>'
               );
